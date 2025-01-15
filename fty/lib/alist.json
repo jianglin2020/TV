@@ -1,0 +1,13 @@
+{
+    "drives": [
+        {
+            "name": "夸克",
+            "server": "http://192.168.1.120:8040",
+            "hidden": false,
+            "login": {
+                "username": "xxx",
+                "password": "xxx"
+            }
+        }
+    ]
+}

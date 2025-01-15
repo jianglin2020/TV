@@ -1,0 +1,36 @@
+{
+  "spider": "./pg2.jar",
+  "sites": [
+    {
+      "key": "Miss",
+      "name": "Miss",
+      "type": 3,
+      "api": "csp_Miss",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "Jable",
+      "name": "Jable",
+      "type": 3,
+      "api": "csp_Jable",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "csp_AList",
+      "name": "AList",
+      "type": 3,
+      "api": "csp_AList",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "list"
+      },
+      "ext": "file://TV/alist.json",
+      "timeout": 15
+    }
+  ]
+}
