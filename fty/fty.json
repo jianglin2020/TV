@@ -218,11 +218,11 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
-      "name": "IPV4",
+      "name": "iptv3",
       "type": 0,
-      "url": "./lib/multicast.txt",
+      "url": "./lib/iptv3.m3u",
       "playerType": 1,
-      "logo": "https://ghfast.top/raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/{name}.png"
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
       "name": "IPV6①",
