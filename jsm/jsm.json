@@ -1,5 +1,5 @@
 {
-  "spider": "./pg2.jar",
+  "spider": "./pg.jar",
   "sites": [
     {
       "key": "Miss",
