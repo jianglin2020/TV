@@ -1,5 +1,5 @@
 {
-  "spider": "./okpng.txt;md5;468bece57bced3acbd7d83aaff27b240",
+  "spider": "./okpng.png;md5;64c50fe5a6d5732b026b43c16588314c",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -65,7 +65,7 @@
       "ext": {
         "site": 0
       },
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "天天",
@@ -78,7 +78,7 @@
       "ext": {
         "site": 1
       },
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "文才",
@@ -88,7 +88,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "糯米",
@@ -98,7 +98,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "浪酷版",
@@ -111,17 +111,17 @@
       "ext": {
         "site": 2
       },
-      "timeout": 5
+      "timeout": 10
     },
     {
-      "key": "南瓜",
-      "name": "🎃南瓜┃在线",
+      "key": "视觉",
+      "name": "🍄视觉┃在线",
       "type": 3,
-      "api": "csp_NanguaGuard",
+      "api": "csp_ShiJueGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "小苹果",
@@ -131,11 +131,11 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "皮皮虾",
-      "name": "💫皮皮虾┃App",
+      "name": "💫皮虾┃App",
       "type": 3,
       "api": "csp_PPXGuard",
       "searchable": 1,
@@ -151,37 +151,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 5
-    },
-    {
-      "key": "现代",
-      "name": "🤩现代┃App",
-      "type": 3,
-      "api": "csp_XianDaiGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 5
-    },
-    {
-      "key": "优质",
-      "name": "🤗优质┃App",
-      "type": 3,
-      "api": "csp_YouZhiGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 5
-    },
-    {
-      "key": "雨滴",
-      "name": "😉雨滴┃App",
-      "type": 3,
-      "api": "csp_YuDiGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 5
+      "timeout": 10
     },
     {
       "key": "木耳",
@@ -876,20 +846,6 @@
       "timeout": 10
     },
     {
-      "name": "范明明",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
-      "playerType": 2,
-      "timeout": 10
-    },
-    {
-      "name": "yuanzl77",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/yuanzl77/IPTV/refs/heads/main/live.m3u",
-      "playerType": 2,
-      "timeout": 10
-    },
-    {
       "name": "电视Live",
       "type": 0,
       "url": "http://127.0.0.1:9978/proxy?do=live&u=Gather",
@@ -906,9 +862,13 @@
     {
       "name": "国内Live",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1735900458536/oitv.txt",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/Sz334eHF.txt",
       "playerType": 2,
-      "timeout": 10
+      "timeout": 10,
+      "catchup": {
+        "type": "append",
+        "source": "&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      }
     },
     {
       "name": "肥羊B站直播",

@@ -25,7 +25,7 @@
       },
       "ext": "file://TV/alist.json",
       "timeout": 15,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "我的夸克",
@@ -43,7 +43,7 @@
         "type": "list"
       },
       "timeout": 30,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "玩偶",
@@ -59,7 +59,7 @@
         "uc_cookie": "file://TV/uc_cookie.txt"
       },
       "timeout": 30,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "校长",
@@ -75,7 +75,7 @@
         "uc_cookie": "file://TV/uc_cookie.txt"
       },
       "timeout": 30,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "蜡笔",
@@ -91,7 +91,7 @@
         "uc_cookie": "file://TV/uc_cookie.txt"
       },
       "timeout": 25,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "天天",
@@ -105,7 +105,7 @@
         "site": 1
       },
       "timeout": 5,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "皮皮虾",
@@ -116,7 +116,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 5,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "人人",
@@ -127,7 +127,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 5,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "现代",
@@ -138,7 +138,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 5,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "文采",
@@ -184,7 +184,7 @@
         "uc_cookie": "file://TV/uc_cookie.txt"
       },
       "timeout": 15,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     },
     {
       "key": "csp_QuPanSouGuard",
@@ -198,7 +198,7 @@
         "cookie": "file://TV/quark_cookie.txt"
       },
       "timeout": 15,
-      "jar": "./lib/okpng.txt;md5;468bece57bced3acbd7d83aaff27b240"
+      "jar": "./lib/okpng.png;md5;64c50fe5a6d5732b026b43c16588314c"
     }
   ],
   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
