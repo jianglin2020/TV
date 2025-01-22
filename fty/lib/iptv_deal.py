@@ -49,12 +49,12 @@ with open(file_to_update, "r", encoding="utf-8") as file:
                     updated_lines.append(address + "\n")
                 # 跳过旧地址行
                 i += 1  # 跳过原地址行
-            else:
-                updated_lines.append(lines[i])  # 保留原频道描述行
-                updated_lines.append(lines[i + 1])  # 保留原地址行
-                i += 1  # 继续处理下一行
-        else:
-            updated_lines.append(lines[i])  # 非描述行直接保留
+            # else:
+            #     updated_lines.append(lines[i])  # 保留原频道描述行
+            #     updated_lines.append(lines[i + 1])  # 保留原地址行
+            #     i += 1  # 继续处理下一行
+        # else:
+            # updated_lines.append(lines[i])  # 非描述行直接保留
         i += 1
 
 # 写入更新后的文件
