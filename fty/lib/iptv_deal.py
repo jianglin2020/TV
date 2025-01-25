@@ -11,7 +11,7 @@ print(f"当前工作目录切换到：{os.getcwd()}")
 
 # 文件路径
 file_to_update = "iptv_dome.m3u"  # 第一个文件路径（需要更新的文件）
-file_with_new_addresses = "Sub.m3u"  # 第二个文件路径（包含新地址的文件）
+file_with_new_addresses = "ipv6.m3u"  # 第二个文件路径（包含新地址的文件）
 output_file = "iptv_update.m3u"  # 输出文件路径
 
 # 读取新地址文件并构建频道名称到多个地址的映射
@@ -34,6 +34,11 @@ updated_lines = []
 i = 0  # 线条索引
 with open(file_to_update, "r", encoding="utf-8") as file:
     lines = file.readlines()
+    
+    # 保留文件头部的 #EXTM3U 以及其它非频道描述行
+    if lines[0].startswith("#EXTM3U"):
+        updated_lines.append(lines[0])  # 保留文件头部
+    
     while i < len(lines):
         match = re.match(r'#EXTINF:-1.*?tvg-name="(.*?)".*', lines[i])
         if match and i + 1 < len(lines):  # 找到频道描述行并确保有地址行
@@ -44,17 +49,12 @@ with open(file_to_update, "r", encoding="utf-8") as file:
             # 如果该频道有新地址，替换原地址
             if normalized_name in channel_address_map:
                 updated_lines.append(lines[i])  # 保留频道描述行
-                # 添加新地址，确保没有原地址
-                for address in channel_address_map[normalized_name]:  # 添加所有的新地址
-                    updated_lines.append(address + "\n")
-                # 跳过旧地址行
+                for address in channel_address_map[normalized_name]:  # 遍历所有新地址
+                    # 检查地址中是否包含“华数”，如果包含就跳过
+                    if "华数" in address:
+                        continue
+                    updated_lines.append(address + "\n")  # 添加新地址
                 i += 1  # 跳过原地址行
-            # else:
-            #     updated_lines.append(lines[i])  # 保留原频道描述行
-            #     updated_lines.append(lines[i + 1])  # 保留原地址行
-            #     i += 1  # 继续处理下一行
-        # else:
-            # updated_lines.append(lines[i])  # 非描述行直接保留
         i += 1
 
 # 写入更新后的文件
