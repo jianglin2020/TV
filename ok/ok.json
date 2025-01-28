@@ -1,5 +1,5 @@
 {
-  "spider": "./okpng.png;md5;64c50fe5a6d5732b026b43c16588314c",
+  "spider": "./okpng.png;md5;7f83a3b58a5140e12bc74cd3ef0ebf97",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -53,6 +53,26 @@
         "uc_cookie": "file://TV/uc_cookie.txt"
       },
       "timeout": 30
+    },
+    {
+      "key": "人人",
+      "name": "😘人人┃App",
+      "type": 3,
+      "api": "csp_RenRenGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "瓜子",
+      "name": "🍉瓜子┃App",
+      "type": 3,
+      "api": "csp_GuaziGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
     },
     {
       "key": "热播",
@@ -114,40 +134,10 @@
       "timeout": 10
     },
     {
-      "key": "视觉",
-      "name": "🍄视觉┃在线",
-      "type": 3,
-      "api": "csp_ShiJueGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
-    {
       "key": "小苹果",
       "name": "🍎苹果┃直连",
       "type": 3,
       "api": "csp_XpgGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
-    {
-      "key": "皮皮虾",
-      "name": "💫皮虾┃App",
-      "type": 3,
-      "api": "csp_PPXGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 5
-    },
-    {
-      "key": "人人",
-      "name": "😘人人┃App",
-      "type": 3,
-      "api": "csp_RenRenGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -329,6 +319,16 @@
       "timeout": 10
     },
     {
+      "key": "荐片",
+      "name": "⚔️荐片┃手机",
+      "type": 3,
+      "api": "csp_JianpianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
       "key": "我的阿里",
       "name": "🐱我的┃阿里",
       "type": 3,
@@ -408,6 +408,16 @@
       "timeout": 10
     },
     {
+      "key": "星芽短剧",
+      "name": "💖星芽┃短剧",
+      "type": 3,
+      "api": "csp_AppXYGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 20
+    },
+    {
       "key": "csp_Btt",
       "name": "🌞比特┃在线",
       "type": 3,
@@ -432,7 +442,7 @@
       "key": "yhdm",
       "name": "🌸樱花┃动漫",
       "type": 3,
-      "api": "csp_YingGuard",
+      "api": "csp_YHDMGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -456,6 +466,16 @@
       "searchable": 1,
       "changeable": 0,
       "timeout": 20
+    },
+    {
+      "key": "聚合直播",
+      "name": "📽️聚合┃直播",
+      "type": 3,
+      "api": "csp_LivingGuard",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10
     },
     {
       "key": "快手直播",
@@ -838,6 +858,17 @@
   ],
   "lives": [
     {
+      "name": "国内Live",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1737895256665/zq.txt",
+      "playerType": 2,
+      "timeout": 10,
+      "catchup": {
+        "type": "append",
+        "source": "&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
+      }
+    },
+    {
       "name": "一起看",
       "type": 3,
       "api": "csp_HuyaGuard",
@@ -846,29 +877,11 @@
       "timeout": 10
     },
     {
-      "name": "电视Live",
+      "name": "范明明",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&u=Gather",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
       "playerType": 2,
       "timeout": 10
-    },
-    {
-      "name": "网络Live",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&u=Live",
-      "playerType": 2,
-      "timeout": 10
-    },
-    {
-      "name": "国内Live",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/Sz334eHF.txt",
-      "playerType": 2,
-      "timeout": 10,
-      "catchup": {
-        "type": "append",
-        "source": "&starttime=${(b)yyyyMMdd'T'HHmm}00.00Z&endtime=${(e)yyyyMMdd'T'HHmm}00.00Z"
-      }
     },
     {
       "name": "肥羊B站直播",
