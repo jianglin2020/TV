@@ -11,7 +11,7 @@ print(f"当前工作目录切换到：{os.getcwd()}")
 
 # 文件路径
 file_to_update = "iptv_dome.m3u"  # 第一个文件路径（需要更新的文件）
-file_with_new_addresses = "ipv6.m3u"  # 第二个文件路径（包含新地址的文件）
+file_with_new_addresses = "tv.m3u"  # 第二个文件路径（包含新地址的文件）
 output_file = "iptv_update.m3u"  # 输出文件路径
 
 # 读取新地址文件并构建频道名称到多个地址的映射
@@ -50,8 +50,10 @@ with open(file_to_update, "r", encoding="utf-8") as file:
             if normalized_name in channel_address_map:
                 updated_lines.append(lines[i])  # 保留频道描述行
                 for address in channel_address_map[normalized_name]:  # 遍历所有新地址
-                    # 检查地址中是否包含“华数”，如果包含就跳过
-                    if "华数" in address:
+                    # 定义需要过滤的关键词
+                    filter_keywords = ["华数", "gaoma"]
+                    # 如果地址包含任意一个过滤词，则跳过
+                    if any(keyword in address for keyword in filter_keywords):
                         continue
                     updated_lines.append(address + "\n")  # 添加新地址
                 i += 1  # 跳过原地址行
