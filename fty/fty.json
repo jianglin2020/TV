@@ -103,6 +103,20 @@
       "jar": "./lib/spider.jar"
     },
     {
+      "key": "浪酷弹幕",
+      "name": "😘浪酷┃在线",
+      "type": 3,
+      "api": "csp_TianTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": false,
+        "site": "aHR0cDovL3YubGt1eXMuY24="
+      },
+      "jar": "./lib/spider.jar"
+    },
+    {
       "key": "文采",
       "name": "💮文采┃秒播",
       "type": 3,
