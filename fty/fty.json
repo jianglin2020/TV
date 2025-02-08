@@ -113,8 +113,7 @@
       "name": "🍉瓜子┃App",
       "type": 3,
       "api": "./lib/drpy2.min.js",
-      "ext": "./lib/瓜子影视.js",
-      "jar": "./lib/spider.jar"
+      "ext": "./lib/瓜子影视.js"
     },
     {
       "key": "文采",
