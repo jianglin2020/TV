@@ -95,14 +95,6 @@
       "jar": "./lib/spider.jar"
     },
     {
-      "key": "瓜子影视",
-      "name": "🍉瓜子┃App",
-      "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/瓜子影视.js",
-      "jar": "./lib/spider.jar"
-    },
-    {
       "key": "浪酷弹幕",
       "name": "😘浪酷┃在线",
       "type": 3,
@@ -114,6 +106,14 @@
         "danmu": false,
         "site": "aHR0cDovL3YubGt1eXMuY24="
       },
+      "jar": "./lib/spider.jar"
+    },
+    {
+      "key": "瓜子影视",
+      "name": "🍉瓜子┃App",
+      "type": 3,
+      "api": "./lib/drpy2.min.js",
+      "ext": "./lib/瓜子影视.js",
       "jar": "./lib/spider.jar"
     },
     {
@@ -166,10 +166,10 @@
   "lives": [
     {
       "name": "iptv",
+      "type": 0,
       "url": "./lib/iptv.m3u",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png",
-      "playerType": 1
+      "playerType": 1,
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
       "name": "iptv2",
