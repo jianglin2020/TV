@@ -1,16 +1,13 @@
 {
-  "spider": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1736978101484/f0116.txt;md5;41128e11e9993ee81f3b16c25528cb71",
+  "spider": "./lib/spider.jar",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "sites": [
     {
       "key": "豆豆豆",
       "name": "🅱豆瓣┃推荐",
       "type": 3,
-      "api": "csp_DouDou",
-      "indexs": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
+      "api": "csp_Douban",
+      "searchable": 0
     },
     {
       "key": "csp_AList",
@@ -24,8 +21,7 @@
         "type": "list"
       },
       "ext": "file://TV/alist.json",
-      "timeout": 15,
-      "jar": "./lib/spider.jar"
+      "timeout": 15
     },
     {
       "key": "我的夸克",
@@ -42,8 +38,7 @@
       "style": {
         "type": "list"
       },
-      "timeout": 30,
-      "jar": "./lib/spider.jar"
+      "timeout": 30
     },
     {
       "key": "玩偶",
@@ -59,8 +54,7 @@
         "uc_cookie": "file://TV/uc_cookie.txt",
         "wogg": true,
         "danmu": false
-      },
-      "jar": "./lib/spider.jar"
+      }
     },
     {
       "key": "蜡笔",
@@ -77,8 +71,7 @@
         "site": "http://feimaoai.site",
         "danmu": false
       },
-      "timeout": 25,
-      "jar": "./lib/spider.jar"
+      "timeout": 25
     },
     {
       "key": "天天",
@@ -91,8 +84,7 @@
       "ext": {
         "danmu": false,
         "site": "aHR0cDovL29wLnlzZHFqcy5jbg=="
-      },
-      "jar": "./lib/spider.jar"
+      }
     },
     {
       "key": "浪酷弹幕",
@@ -105,45 +97,53 @@
       "ext": {
         "danmu": false,
         "site": "aHR0cDovL3YubGt1eXMuY24="
-      },
-      "jar": "./lib/spider.jar"
+      }
     },
     {
       "key": "瓜子影视",
       "name": "🍉瓜子┃App",
       "type": 3,
-      "api": "./lib/drpy2.min.js",
-      "ext": "./lib/瓜子影视.js"
-    },
-    {
-      "key": "文采",
-      "name": "💮文采┃秒播",
-      "type": 3,
-      "api": "csp_Jpys",
-      "playerType": 2,
+      "api": "csp_Gz360",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1
+      "filterable": 1
+    },
+    {
+      "key": "文才",
+      "name": "💮文才┃秒播",
+      "type": 3,
+      "api": "csp_Jpys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": false
+      }
     },
     {
       "key": "糯米",
       "name": "🍓糯米┃秒播",
       "type": 3,
-      "api": "csp_Nmyswv",
+      "api": "csp_Nmys",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1
+      "filterable": 1,
+      "ext": {
+        "danmu": false
+      }
     },
     {
       "key": "热播",
       "name": "📺热播┃多线",
       "type": 3,
-      "api": "csp_AppTT",
-      "playerType": 2,
+      "api": "csp_TianTian",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
-      "ext": "AO7TcBkd8I/B5wQc4Qma+pU="
+      "filterable": 1,
+      "ext": {
+        "danmu": false,
+        "site": "aHR0cDovL3YucmJvdHYuY24="
+      }
     },
     {
       "key": "csp_QuPanSou",
@@ -157,8 +157,7 @@
       "ext": {
         "cookie": "file://TV/quark_cookie.txt"
       },
-      "timeout": 15,
-      "jar": "./lib/spider.jar"
+      "timeout": 15
     }
   ],
   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
