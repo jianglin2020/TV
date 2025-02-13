@@ -3,7 +3,7 @@
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "sites": [
     {
-      "key": "豆豆豆",
+      "key": "豆豆",
       "name": "🅱豆瓣┃推荐",
       "type": 3,
       "api": "csp_Douban",
@@ -42,7 +42,7 @@
     },
     {
       "key": "玩偶",
-      "name": "👽玩偶┃4K",
+      "name": "👽玩偶┃在线",
       "type": 3,
       "api": "csp_Wogg",
       "searchable": 1,
@@ -57,8 +57,8 @@
       }
     },
     {
-      "key": "蜡笔",
-      "name": "👠蜡笔┃在线",
+      "key": "夸克至臻",
+      "name": "💌至臻┃在线",
       "type": 3,
       "api": "csp_Wobg",
       "quickSearch": 1,
@@ -68,10 +68,25 @@
         "token": "file://TV/ali_token.txt",
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
-        "site": "http://feimaoai.site",
+        "site": "https://xiaomiai.site",
         "danmu": false
-      },
-      "timeout": 25
+      }
+    },
+    {
+      "key": "夸克多多",
+      "name": "🦄多多┃在线",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "https://tv.yydsys.top",
+        "danmu": false
+      }
     },
     {
       "key": "天天",
