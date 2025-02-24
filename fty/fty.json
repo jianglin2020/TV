@@ -180,21 +180,14 @@
     {
       "name": "iptv",
       "type": 0,
-      "url": "./lib/iptv2.m3u",
+      "url": "./lib/iptv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
       "name": "iptv2",
       "type": 0,
-      "url": "./lib/iptv.m3u",
-      "playerType": 1,
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
-      "name": "沐辰",
-      "type": 0,
-      "url": "http://192.168.1.120:5077/Sub?type=m3u",
+      "url": "./lib/iptv2.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
@@ -202,6 +195,13 @@
       "name": "肥羊",
       "type": 0,
       "url": "http://192.168.1.120:35455/tv.m3u",
+      "playerType": 1,
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "沐辰",
+      "type": 0,
+      "url": "http://192.168.1.120:5077/Sub?type=m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     }
