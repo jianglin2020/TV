@@ -89,15 +89,6 @@
       }
     },
     {
-      "key": "雷鲸",
-      "name": "🐰雷鲸┃天翼",
-      "type": 3,
-      "api": "csp_Wexleijing",
-      "searchable": 1,
-      "changeable": 1,
-      "jar": "./lib/wex.jar"
-    },
-    {
       "key": "天天",
       "name": "⛅️天天┃直连",
       "type": 3,
