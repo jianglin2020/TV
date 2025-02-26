@@ -89,6 +89,15 @@
       }
     },
     {
+      "key": "雷鲸",
+      "name": "🐰雷鲸┃天翼",
+      "type": 3,
+      "api": "csp_Wexleijing",
+      "searchable": 1,
+      "changeable": 1,
+      "jar": "./lib/wex.jar"
+    },
+    {
       "key": "天天",
       "name": "⛅️天天┃直连",
       "type": 3,
@@ -113,15 +122,6 @@
         "danmu": false,
         "site": "aHR0cDovL3YubGt1eXMuY24="
       }
-    },
-    {
-      "key": "瓜子影视",
-      "name": "🍉瓜子┃App",
-      "type": 3,
-      "api": "csp_Gz360",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
     },
     {
       "key": "文才",
@@ -192,16 +192,16 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
-      "name": "肥羊",
+      "name": "沐辰",
       "type": 0,
-      "url": "http://192.168.1.120:35455/tv.m3u",
+      "url": "http://192.168.1.120:5077/Sub?type=m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
-      "name": "沐辰",
+      "name": "肥羊",
       "type": 0,
-      "url": "http://192.168.1.120:5077/Sub?type=m3u",
+      "url": "http://192.168.1.120:35455/tv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     }
