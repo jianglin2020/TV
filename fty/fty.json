@@ -115,18 +115,6 @@
       }
     },
     {
-      "key": "文才",
-      "name": "💮文才┃秒播",
-      "type": 3,
-      "api": "csp_Jpys",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": false
-      }
-    },
-    {
       "key": "糯米",
       "name": "🍓糯米┃秒播",
       "type": 3,
@@ -185,7 +173,7 @@
     {
       "name": "沐辰",
       "type": 0,
-      "url": "http://192.168.1.120:5077/Sub?type=m3u",
+      "url": "http://192.168.1.120:5078/Sub.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
