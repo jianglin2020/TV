@@ -89,6 +89,34 @@
       }
     },
     {
+      "key": "小雷",
+      "name": "🐶雷鲸┃天翼",
+      "type": 3,
+      "api": "csp_PanTa",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "siteUrl": "https://www.leijing1.com/",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
+      },
+      "jar": "./lib/custom_spider.jar"
+    },
+    {
+      "key": "盘搜天翼",
+      "name": "🐈盘搜┃天翼",
+      "type": 3,
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "siteUrl": "https://www.tianyiso.com",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
+      },
+      "jar": "./lib/custom_spider.jar"
+    },
+    {
       "key": "天天",
       "name": "⛅️天天┃直连",
       "type": 3,
