@@ -89,6 +89,21 @@
       }
     },
     {
+      "key": "TgYunPan",
+      "name": "🐰电报┃天翼",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "count": 4,
+        "channelUsername": "tianyirigeng",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
+      },
+      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
+    },
+    {
       "key": "小雷",
       "name": "🐶雷鲸┃天翼",
       "type": 3,
@@ -112,21 +127,6 @@
       "switchable": 0,
       "ext": {
         "siteUrl": "https://www.tianyiso.com",
-        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
-      },
-      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
-    },
-    {
-      "key": "TgYunPan",
-      "name": "🐰电报┃天翼",
-      "type": 3,
-      "api": "csp_TgYunPanLocal",
-      "searchable": 1,
-      "filterable": 0,
-      "switchable": 0,
-      "ext": {
-        "count": 4,
-        "channelUsername": "tianyirigeng",
         "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
       },
       "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
