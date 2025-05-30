@@ -132,43 +132,17 @@
       "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
     },
     {
-      "key": "瓜子",
-      "name": "🍉瓜子┃直连",
-      "type": 3,
-      "api": "csp_GuaziGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10,
-      "jar": "./lib/8wGANxVf.png;md5;64fa8b2d15371ea076d5723244eb54a8"
-    },
-    {
       "key": "天天",
       "name": "⛅️天天┃直连",
       "type": 3,
-      "api": "csp_TianTianGuard",
+      "api": "csp_TianTian",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "site": 1
-      },
-      "timeout": 10,
-      "jar": "./lib/8wGANxVf.png;md5;64fa8b2d15371ea076d5723244eb54a8"
-    },
-    {
-      "key": "热播",
-      "name": "📺热播┃多线",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 0
-      },
-      "timeout": 10,
-      "jar": "./lib/8wGANxVf.png;md5;64fa8b2d15371ea076d5723244eb54a8"
+        "danmu": false,
+        "site": "aHR0cDovL29wLnlzZHFqcy5jbg=="
+      }
     },
     {
       "key": "浪酷弹幕",
@@ -193,6 +167,19 @@
       "filterable": 1,
       "ext": {
         "danmu": false
+      }
+    },
+    {
+      "key": "热播",
+      "name": "📺热播┃多线",
+      "type": 3,
+      "api": "csp_TianTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": false,
+        "site": "aHR0cDovL3YucmJvdHYuY24="
       }
     },
     {
