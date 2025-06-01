@@ -41,67 +41,6 @@
       "timeout": 30
     },
     {
-      "key": "玩偶",
-      "name": "👽玩偶┃在线",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "token": "file://TV/ali_token.txt",
-        "cookie": "file://TV/quark_cookie.txt",
-        "uc_cookie": "file://TV/uc_cookie.txt",
-        "wogg": true,
-        "danmu": false
-      }
-    },
-    {
-      "key": "夸克至臻",
-      "name": "💌至臻┃在线",
-      "type": 3,
-      "api": "csp_Wobg",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "token": "file://TV/ali_token.txt",
-        "cookie": "file://TV/quark_cookie.txt",
-        "uc_cookie": "file://TV/uc_cookie.txt",
-        "site": "http://xiaomi666.fun",
-        "danmu": false
-      }
-    },
-    {
-      "key": "TgYunPan",
-      "name": "🐰电报┃天翼",
-      "type": 3,
-      "api": "csp_TgYunPanLocal",
-      "searchable": 1,
-      "filterable": 0,
-      "switchable": 0,
-      "ext": {
-        "count": 4,
-        "channelUsername": "tianyirigeng",
-        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
-      },
-      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
-    },
-    {
-      "key": "小雷",
-      "name": "🐶雷鲸┃天翼",
-      "type": 3,
-      "api": "csp_PanTa",
-      "searchable": 1,
-      "filterable": 0,
-      "switchable": 0,
-      "ext": {
-        "siteUrl": "https://www.leijing1.com/",
-        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
-      },
-      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
-    },
-    {
       "key": "电影",
       "name": "🎬电影┃弹幕",
       "type": 3,
@@ -112,7 +51,7 @@
     },
     {
       "key": "天天",
-      "name": "🦢天天┃弹幕",
+      "name": "⛅️天天┃直连",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppRJ",
@@ -121,7 +60,7 @@
     },
     {
       "key": "csp_baibai",
-      "name": "🦵白白┃弹幕",
+      "name": "😘白白┃直连",
       "type": 3,
       "quickSearch": 1,
       "api": "csp_SuBaiBai",
@@ -130,7 +69,7 @@
     },
     {
       "key": "csp_臻彩",
-      "name": "🥽臻彩┃弹幕",
+      "name": "🍓臻彩┃直连",
       "type": 3,
       "api": "csp_AppYsV2",
       "searchable": 1,
