@@ -1,5 +1,5 @@
 {
-  "spider": "./8wGANxVf.png;md5;64fa8b2d15371ea076d5723244eb54a8",
+  "spider": "./G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -434,6 +434,20 @@
       "name": "🌂我的┃123",
       "type": 3,
       "api": "csp_My123Guard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "indexs": 0,
+      "style": {
+        "type": "list"
+      },
+      "timeout": 30
+    },
+    {
+      "key": "我的天逸",
+      "name": "🧽我的┃天逸",
+      "type": 3,
+      "api": "csp_My189Guard",
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 0,
