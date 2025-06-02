@@ -41,6 +41,54 @@
       "timeout": 30
     },
     {
+      "key": "玩偶",
+      "name": "👽玩偶┃在线",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "wogg": true,
+        "danmu": true
+      }
+    },
+    {
+      "key": "夸克至臻",
+      "name": "💌至臻┃在线",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "http://xiaomi666.fun",
+        "danmu": true
+      }
+    },
+    {
+      "key": "二小",
+      "name": "🦄二小┃在线",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "https://erixaopan.fun",
+        "danmu": true
+      }
+    },
+    {
       "key": "瓜子",
       "name": "🍉瓜子┃直连",
       "type": 3,
