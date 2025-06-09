@@ -73,113 +73,23 @@
       }
     },
     {
-      "key": "二小",
-      "name": "🦄二小┃在线",
+      "key": "csp_Gz360",
+      "name": "🍉瓜子┃在线",
       "type": 3,
-      "api": "csp_Wobg",
       "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "token": "file://TV/ali_token.txt",
-        "cookie": "file://TV/quark_cookie.txt",
-        "uc_cookie": "file://TV/uc_cookie.txt",
-        "site": "https://erixaopan.fun",
-        "danmu": true
-      }
+      "api": "csp_Gz360",
+      "jar": "./lib/0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1"
     },
     {
-      "key": "TgYunPan",
-      "name": "🐰电报┃天翼",
+      "key": "csp_臻彩",
+      "name": "🥽臻彩┃在线",
       "type": 3,
-      "api": "csp_TgYunPanLocal",
-      "searchable": 1,
-      "filterable": 0,
-      "switchable": 0,
-      "ext": {
-        "count": 4,
-        "channelUsername": "tianyirigeng",
-        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
-      },
-      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
-    },
-    {
-      "key": "小雷",
-      "name": "🐶雷鲸┃天翼",
-      "type": 3,
-      "api": "csp_PanTa",
-      "searchable": 1,
-      "filterable": 0,
-      "switchable": 0,
-      "ext": {
-        "siteUrl": "https://www.leijing1.com/",
-        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
-      },
-      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
-    },
-    {
-      "key": "瓜子",
-      "name": "🍉瓜子┃直连",
-      "type": 3,
-      "api": "csp_GuaziGuard",
+      "api": "csp_AppYsV2",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "天天",
-      "name": "⛅️天天┃直连",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 1
-      },
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "热播",
-      "name": "📺热播┃多线",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 0
-      },
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "浪酷版",
-      "name": "😘浪酷┃在线",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 2
-      },
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "糯米",
-      "name": "🍓糯米┃秒播",
-      "type": 3,
-      "api": "csp_NmysGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+			"ext": "https://cnb.cool/xiaomideyun/xiaomideyun/-/git/raw/main/kan.txt",
+      "jar": "./lib/0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1"
     },
     {
       "key": "电影",
@@ -188,7 +98,7 @@
       "quickSearch": 1,
       "api": "csp_AppGet",
       "ext": "sHR2rlsfjI4L3t4RXQMknwVOqdD9gPzfYgo/IDVldfFlUVRxMhFa2sMsM3jbFDHf0JeBOxGU/o2kx5CXvQT/L2bX6V7O1a4e1OUxpnYI11YpBWQjTFE4gjUC579JwV+7XsWgMJ35bTzURfWg+DYOBr8Qaiyjp0ceuD6TwFyfcNku38N3wEf629K9W7TYaAEe",
-      "jar": "./lib/0530-1.jar;md5;e95605abf174b6c0fc155c7247aa0bdb"
+      "jar": "./lib/0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1"
     }
   ],
   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
@@ -196,14 +106,14 @@
     {
       "name": "iptv",
       "type": 0,
-      "url": "./lib/iptv.txt",
+      "url": "./lib/iptv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
       "name": "iptv2",
       "type": 0,
-      "url": "./lib/iptv.m3u",
+      "url": "https://iptv.catvod.com/tv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },

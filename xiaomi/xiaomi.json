@@ -1,5 +1,5 @@
 {
-  "spider": "./0530-1.jar;md5;e95605abf174b6c0fc155c7247aa0bdb",
+  "spider": "./0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1",
   "wallpaper": "https://api.btstu.cn/sjbz/api.php",
   "sites": [
     {
@@ -28,7 +28,9 @@
         "site_urls": [
           "https://mihdr.top",
           "https://www.mihdr.top",
-          "http://www.miqk.cc",
+          "https://www.miqk.cc",
+          "https://xiaomiai.site",
+          "https://xiaomi666.fun",
           "https://www.zhizhenpan.fun"
         ],
         "url_key": "Netfixtv",
@@ -51,10 +53,10 @@
       "filterable": 1,
       "ext": {
         "site_urls": [
-          "https://erixaopan.fun/",
+          "http://www.2xiaopan.fun/",
           "https://2xiaopan.fun/",
-          "https://www.2xiaopan.fun/",
           "https://erxiaofn.click/",
+          "https://erixaopan.fun/",
           "https://www.xhww.net/"
         ],
         "url_key": "UC",
@@ -144,7 +146,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "http://cms.lygdyy.cn/api.php/app/"
+      "ext": "./lib/kan.txt"
     },
     {
       "key": "天天",
@@ -155,11 +157,22 @@
       "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK"
     },
     {
+      "key": "csp_nongmin",
+      "name": "👨农民┃1080P",
+      "type": 3,
+      "api": "csp_Wwys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://m.wwgz.cn/"
+    },
+    {
       "key": "热热",
       "name": "🔥热热┃1080P",
       "type": 3,
       "quickSearch": 1,
-      "api": "./lib/rebo.py"
+      "api": "csp_AppRJ2",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn9mmg6Ofmy66+wcs9waIyn4hKqT9jG9s4kO6qzcu2OSqWS1/T+wfkqe+UwoipekwvcM11PTDrQqKYI8lmMXUc1vBHxp/2uWIw5HUoscBNWEb"
     },
     {
       "key": "QD4K",
@@ -167,15 +180,7 @@
       "type": 3,
       "api": "csp_AppYsV2",
       "playerType": 2,
-      "ext": "http://172.83.156.150:1010/api.php/app/"
-    },
-    {
-      "key": "csp_Wwys",
-      "name": "👨农民┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_Wwys",
-      "ext": "https://www.wwgz.cn"
+      "ext": "./lib/cs.txt"
     },
     {
       "key": "悠悠",
@@ -197,7 +202,7 @@
       "type": 3,
       "api": "csp_qiao2",
       "playerType": 2,
-      "jar": "./lib/0526.jar;md5;bea0e94d4bbefc6dfc5f7de2620192ce",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1749181726843/kenna.png;md5;bea0e94d4bbefc6dfc5f7de2620192ce",
       "ext": "7lj763gg402i79425739i7jghj118797l4hj840gi18633331l4708g2h7145403549g44l8ii56i187681hkjj3hhgh1ih3l32j250lk1k786lj20j468hk3hli4l46gig4i3g7g2722328j0136h01i7g5183k22k7gg3i72hk81gl8k9839kl7i0707"
     },
     {
@@ -215,6 +220,14 @@
       "quickSearch": 1,
       "api": "csp_AppGet2",
       "ext": "sHR2rlsfjI4L3t4RXQMkn9964m8oyAP5Q1pq67Vyh7V8ESTgG/jVLrcHt3eKCMbyNGbDyZFu9n7Zd6zMxZJXTkhGtT9DNgJA5YOi9roHwbrmlgGw3de3X42kvYAYCcSnIqa9zR24cDQyq4GwTX7H3QnCkd4xZNrHiLxgPc6nD8L96MLxkLnsYlMQbDTPCOQW"
+    },
+    {
+      "key": "咖啡",
+      "name": "☕️咖啡┃1080P",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGet2",
+      "ext": "N/01JeZBCBEQ0wOXNuAI/q97iGf3Y/QaLBH0kIoVdrnchbMLbbfPL19q8ovW5h2m+h6Vc2ZfvuHR8URxTWX9fgAm0kDDPtgJttitzPQi4xPbaH/BOVSMXdJGDbrzM3VAoJEcX+yxPdaXkrxvaZdq0lCjldlb9yAWC8ZiHssSH+9EKI//ESHDquz0m1V5Bhe/W7UmkE2CRveFiiN2uJABZy1DE1fmdV0B+V+gwiUMKelPBhYA29qkB/0/MY0gVsENky2zTdTFCl4qaFGUz8+G6j6ze5mYO4KfuQ9soedmY0yeXNzPeMZ6rquyAGtngEkw"
     },
     {
       "key": "牛牛",
@@ -252,13 +265,6 @@
       "quickSearch": 1,
       "api": "csp_AppGet",
       "ext": "sHR2rlsfjI4L3t4RXQMknwVOqdD9gPzfYgo/IDVldfFlUVRxMhFa2sMsM3jbFDHf0JeBOxGU/o2kx5CXvQT/L2bX6V7O1a4e1OUxpnYI11YpBWQjTFE4gjUC579JwV+7XsWgMJ35bTzURfWg+DYOBr8Qaiyjp0ceuD6TwFyfcNku38N3wEf629K9W7TYaAEe"
-    },
-    {
-      "key": "享趣",
-      "name": "🔎享趣┃1080P",
-      "type": 3,
-      "api": "csp_AppGet",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn0eYZTuILswGwxMlX75frrEL8QJjjQDTq1hGIbLmL7k8+QY3d6Nh+B6yvptgD1Wj1c4gikVOerYCKY8jbrFo1M1dpW4vCAPm3gz2utYgdUV6PiwSu4Dg4Vdz4W9lHK0ThV3A8bE9P58UtGOkVHrc+I6/lskCKXkPbgijKyCSyG8YSe9IDiOOCl7qn6z/Q93cKg=="
     },
     {
       "key": "csp_AppXY",
@@ -309,14 +315,6 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_Jpys"
-    },
-    {
-      "key": "海马",
-      "name": "🐎海马┃1080P",
-      "type": 3,
-      "quickSearch": 0,
-      "api": "./lib/haima.py",
-      "ext": ""
     },
     {
       "key": "测试",
