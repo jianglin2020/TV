@@ -113,7 +113,7 @@
     {
       "name": "iptv2",
       "type": 0,
-      "url": "https://iptv.catvod.com/tv.m3u",
+      "url": "./lib/iptv2.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
