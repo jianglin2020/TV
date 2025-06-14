@@ -73,6 +73,56 @@
       }
     },
     {
+      "key": "蜡笔",
+      "name": "👠蜡笔┃在线",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "https://feimao666.fun",
+        "danmu": true
+      }
+    },
+    {
+      "key": "二小",
+      "name": "🦄二小┃在线",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "http://www.2xiaopan.fun/",
+        "danmu": true
+      }
+    },
+    {
+      "key": "热热",
+      "name": "📺热播┃App",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppRJ2",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn9mmg6Ofmy66+wcs9waIyn4hKqT9jG9s4kO6qzcu2OSqWS1/T+wfkqe+UwoipekwvcM11PTDrQqKYI8lmMXUc1vBHxp/2uWIw5HUoscBNWEb",
+      "jar": "./lib/0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1"
+    },
+    {
+      "key": "天天",
+      "name": "⛅️天天┃App",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppRJ",
+      "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK",
+      "jar": "./lib/0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1"
+    },
+    {
       "key": "csp_Gz360",
       "name": "🍉瓜子┃在线",
       "type": 3,
@@ -97,7 +147,7 @@
       "type": 3,
       "quickSearch": 1,
       "api": "csp_AppGet",
-      "ext": "sHR2rlsfjI4L3t4RXQMknwVOqdD9gPzfYgo/IDVldfFlUVRxMhFa2sMsM3jbFDHf0JeBOxGU/o2kx5CXvQT/L2bX6V7O1a4e1OUxpnYI11YpBWQjTFE4gjUC579JwV+7XsWgMJ35bTzURfWg+DYOBr8Qaiyjp0ceuD6TwFyfcNku38N3wEf629K9W7TYaAEe",
+      "ext": "0YM2rlqPCLd5eMAslwMf/mBbJX8M/CJVJCQyX2zM7tGdJikFHnx0KfXl4Mi9ORXxU3BxW+JS6MfS0whs911q3EwpaHe1R3A52b2fgxNOgvG5WXvTuLPxtCV9bQCcdRk/XVIoWdYLfkopEVDcAB5LPdzjO7/5FuJbIsGxUWtLsNdGr0PMMzIxq80pHqFeiqAk1uiMRyrtr+YjnEpwFqNZxDCdrdw7WXIAnI0cXjOQOV5WmFUb/3kvXMnEetzMn9tC",
       "jar": "./lib/0606.jpg;md5;1e7f7177310a216ed9b2bf806b6debd1"
     }
   ],

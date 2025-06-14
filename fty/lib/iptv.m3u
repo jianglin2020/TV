@@ -51,7 +51,6 @@ http://192.168.1.120:35455/nptv/chongqing.m3u8
 http://192.168.1.120:35455/nptv/shenzheng.m3u8
 #EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://live.fanmingming.cn/tv/广东卫视.png" group-title="卫视",广东卫视
 http://192.168.1.120:35455/mgtv/608831231.m3u8
-http://192.168.1.120:35455/mgtv/738910838.m3u8
 http://192.168.1.120:35455/nptv/guangdong.m3u8
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/四川卫视.png" group-title="卫视",四川卫视
 http://192.168.1.120:35455/nptv/sichuan.m3u8
@@ -68,7 +67,6 @@ http://192.168.1.120:35455/nptv/jiangsu.m3u8
 http://192.168.1.120:35455/mgtv/783847495.m3u8
 http://192.168.1.120:35455/nptv/jiangxi.m3u8
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.cn/tv/河北卫视.png" group-title="卫视",河北卫视
-http://192.168.1.120:35455/nptv/hebei.m3u8
 http://192.168.1.120:35455/nptv/hebei.m3u8
 #EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" tvg-logo="https://live.fanmingming.cn/tv/河南卫视.png" group-title="卫视",河南卫视
 http://192.168.1.120:35455/mgtv/790187291.m3u8
@@ -95,6 +93,7 @@ http://192.168.1.120:35455/nptv/neimenggu.m3u8
 #EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://live.fanmingming.cn/tv/宁夏卫视.png" group-title="卫视",宁夏卫视
 http://192.168.1.120:35455/nptv/ningxia.m3u8
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" tvg-logo="https://live.fanmingming.cn/tv/陕西卫视.png" group-title="卫视",陕西卫视
+http://192.168.1.120:35455/mgtv/738910838.m3u8
 http://192.168.1.120:35455/nptv/shanxiws.m3u8
 #EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://live.fanmingming.cn/tv/甘肃卫视.png" group-title="卫视",甘肃卫视
 http://192.168.1.120:35455/nptv/gansu.m3u8
