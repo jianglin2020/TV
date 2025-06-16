@@ -53,7 +53,7 @@
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
         "wogg": true,
-        "danmu": true
+        "danmu": false
       }
     },
     {
@@ -69,7 +69,7 @@
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
         "site": "http://xiaomi666.fun",
-        "danmu": true
+        "danmu": false
       }
     },
     {
@@ -85,7 +85,7 @@
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
         "site": "https://feimao666.fun",
-        "danmu": true
+        "danmu": false
       }
     },
     {
@@ -101,37 +101,23 @@
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
         "site": "http://www.2xiaopan.fun/",
-        "danmu": true
+        "danmu": false
       }
     },
     {
       "key": "瓜子",
-      "name": "🍉瓜子┃直连",
+      "name": "🍉瓜子┃App",
       "type": 3,
       "api": "csp_GuaziGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "天天",
-      "name": "⛅️天天┃直连",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 1
-      },
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/ziQTkUw9.png;md5;db4f3f26a27c9c795c2e2638b6165643"
     },
     {
       "key": "热播",
-      "name": "📺热播┃多线",
+      "name": "📺热播┃App",
       "type": 3,
       "api": "csp_TianTianGuard",
       "searchable": 1,
@@ -141,11 +127,25 @@
         "site": 0
       },
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/ziQTkUw9.png;md5;db4f3f26a27c9c795c2e2638b6165643"
+    },
+    {
+      "key": "天天",
+      "name": "⛅️天天┃App",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "site": 1
+      },
+      "timeout": 10,
+      "jar": "./lib/ziQTkUw9.png;md5;db4f3f26a27c9c795c2e2638b6165643"
     },
     {
       "key": "浪酷版",
-      "name": "😘浪酷┃在线",
+      "name": "😘浪酷┃秒播",
       "type": 3,
       "api": "csp_TianTianGuard",
       "searchable": 1,
@@ -155,7 +155,7 @@
         "site": 2
       },
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/ziQTkUw9.png;md5;db4f3f26a27c9c795c2e2638b6165643"
     },
     {
       "key": "糯米",
@@ -166,7 +166,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/ziQTkUw9.png;md5;db4f3f26a27c9c795c2e2638b6165643"
     }
   ],
   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",

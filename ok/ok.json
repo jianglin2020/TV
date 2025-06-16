@@ -1,5 +1,5 @@
 {
-  "spider": "./G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069",
+  "spider": "./ziQTkUw9.png;md5;db4f3f26a27c9c795c2e2638b6165643",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -74,16 +74,6 @@
       "timeout": 25
     },
     {
-      "key": "光影",
-      "name": "🎥光影┃4K",
-      "type": 3,
-      "api": "csp_GuanyingGuard",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "timeout": 30
-    },
-    {
       "key": "玩偶",
       "name": "👽玩偶┃4K",
       "type": 3,
@@ -134,6 +124,16 @@
       "timeout": 25
     },
     {
+      "key": "多多",
+      "name": "🪅多多┃4K",
+      "type": 3,
+      "api": "csp_DuoDuoGuard",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 25
+    },
+    {
       "key": "表哥",
       "name": "👨🏻‍🦱表哥┃4K",
       "type": 3,
@@ -172,6 +172,16 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 25
+    },
+    {
+      "key": "光影",
+      "name": "🎥光影┃4K",
+      "type": 3,
+      "api": "csp_GuanyingGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "timeout": 30
     },
     {
       "key": "云集",
@@ -521,7 +531,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "./lib/drpy2.min.txt?file=drpy2.min.js",
+      "api": "./lib/file.html?id=2c9a91099696ce4301974da3916550ff&file=drpy2.min.js",
       "ext": "./lib/ddys.txt",
       "timeout": 15
     },
@@ -593,11 +603,11 @@
       "timeout": 10
     },
     {
-      "key": "88看球",
-      "name": "⚽88┃看球",
+      "key": "瓜子看球",
+      "name": "⚽瓜子┃看球",
       "type": 3,
-      "api": "csp_KanqiuGuard",
-      "searchable": 1,
+      "api": "csp_GzSportGuard",
+      "searchable": 0,
       "changeable": 0,
       "style": {
         "type": "list"
@@ -605,34 +615,15 @@
       "timeout": 10
     },
     {
-      "key": "jrsjs",
-      "name": "⚽Jrs┃球迷",
+      "key": "88看球",
+      "name": "⚽88┃看球",
       "type": 3,
-      "api": "./lib/drpy2.min.txt?file=drpy2.min.js",
-      "ext": "./lib/jrs.txt",
+      "api": "csp_KanqiuGuard",
+      "searchable": 0,
+      "changeable": 0,
       "style": {
         "type": "list"
       },
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "timeout": 10,
-      "header": {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
-      }
-    },
-    {
-      "key": "310js",
-      "name": "⚽310┃看球",
-      "type": 3,
-      "api": "./lib/drpy2.min.txt?file=drpy2.min.js",
-      "ext": "./lib/310.txt",
-      "style": {
-        "type": "list"
-      },
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
       "timeout": 10
     },
     {
@@ -641,7 +632,7 @@
       "type": 3,
       "api": "csp_BilimdGuard",
       "searchable": 1,
-      "quickSearch": 1,
+      "quickSearch": 0,
       "filterable": 1,
       "style": {
         "type": "rect",
@@ -651,11 +642,11 @@
     },
     {
       "key": "bili",
-      "name": "🅱哔哔┃合集",
+      "name": "🅱哔哩┃合集",
       "type": 3,
       "api": "csp_BiliGuard",
       "searchable": 1,
-      "quickSearch": 1,
+      "quickSearch": 0,
       "filterable": 1,
       "style": {
         "type": "rect",
@@ -668,11 +659,11 @@
     },
     {
       "key": "biliych",
-      "name": "🅱哔哔┃歌曲",
+      "name": "🅱哔哩┃歌曲",
       "type": 3,
       "api": "csp_BiliGuard",
       "searchable": 0,
-      "quickSearch": 1,
+      "quickSearch": 0,
       "filterable": 1,
       "style": {
         "type": "rect",
@@ -682,6 +673,104 @@
         "json": "./lib/biliych.txt"
       },
       "timeout": 20
+    },
+    {
+      "key": "bilixs",
+      "name": "🅱哔哩┃相声",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "json": "./lib/bilixs.txt"
+      },
+      "timeout": 20
+    },
+    {
+      "key": "bilixp",
+      "name": "🅱哔哩┃小品",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "style": {
+        "type": "rect",
+        "ratio": 1.433
+      },
+      "ext": {
+        "json": "./lib/bilixp.txt"
+      },
+      "timeout": 20
+    },
+    {
+      "key": "少儿教育",
+      "name": "📚少儿┃教育",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec8251e772b"
+      }
+    },
+    {
+      "key": "小学课堂",
+      "name": "📚小学┃课堂",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec82537772c"
+      }
+    },
+    {
+      "key": "初中课堂",
+      "name": "📚初中┃课堂",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec824cc7729"
+      }
+    },
+    {
+      "key": "高中教育",
+      "name": "📚高中┃课堂",
+      "type": 3,
+      "api": "csp_BiliGuard",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec824fd772a"
+      }
     },
     {
       "key": "csp_AListGuard",
@@ -758,16 +847,6 @@
       "name": "😼影子┃搜索",
       "type": 3,
       "api": "csp_YingSoGuard",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "timeout": 25
-    },
-    {
-      "key": "聚盘",
-      "name": "🌻聚盘┃搜索",
-      "type": 3,
-      "api": "csp_PankuGuard",
       "searchable": 1,
       "filterable": 1,
       "changeable": 0,
