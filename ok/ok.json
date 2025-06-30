@@ -1,5 +1,5 @@
 {
-  "spider": "./0qzVG3ah.png;md5;d54337f6722cd986388d4264f98eab01",
+  "spider": "./BU07xxy8.png;md5;6ad24e313c3b82e27338e32339de2f4f",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -36,16 +36,6 @@
         "type": "list"
       },
       "timeout": 5
-    },
-    {
-      "key": "校长",
-      "name": "💮小章┃4K",
-      "type": 3,
-      "api": "csp_XiaoZhangGuard",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "timeout": 30
     },
     {
       "key": "百度趣盘",
@@ -182,6 +172,16 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 25
+    },
+    {
+      "key": "校长",
+      "name": "💮小章┃4K",
+      "type": 3,
+      "api": "csp_XiaoZhangGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "timeout": 30
     },
     {
       "key": "光影",
