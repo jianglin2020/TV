@@ -53,7 +53,7 @@
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
         "wogg": true,
-        "danmu": true
+        "danmu": false
       }
     },
     {
@@ -69,7 +69,23 @@
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
         "site": "http://xiaomi666.fun",
-        "danmu": true
+        "danmu": false
+      }
+    },
+    {
+      "key": "蜡笔",
+      "name": "👠蜡笔┃在线",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "https://feimao666.fun",
+        "danmu": false
       }
     },
     {
@@ -84,38 +100,24 @@
         "token": "file://TV/ali_token.txt",
         "cookie": "file://TV/quark_cookie.txt",
         "uc_cookie": "file://TV/uc_cookie.txt",
-        "site": "https://erixaopan.fun",
-        "danmu": true
+        "site": "http://www.2xiaopan.fun/",
+        "danmu": false
       }
     },
     {
       "key": "瓜子",
-      "name": "🍉瓜子┃直连",
+      "name": "🍉瓜子┃App",
       "type": 3,
       "api": "csp_GuaziGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "天天",
-      "name": "⛅️天天┃直连",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 1
-      },
-      "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/BU07xxy8.png;md5;6ad24e313c3b82e27338e32339de2f4f"
     },
     {
       "key": "热播",
-      "name": "📺热播┃多线",
+      "name": "📺热播┃App",
       "type": 3,
       "api": "csp_TianTianGuard",
       "searchable": 1,
@@ -125,11 +127,25 @@
         "site": 0
       },
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/BU07xxy8.png;md5;6ad24e313c3b82e27338e32339de2f4f"
+    },
+    {
+      "key": "天天",
+      "name": "⛅️天天┃App",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "site": 1
+      },
+      "timeout": 10,
+      "jar": "./lib/BU07xxy8.png;md5;6ad24e313c3b82e27338e32339de2f4f"
     },
     {
       "key": "浪酷版",
-      "name": "😘浪酷┃在线",
+      "name": "😘浪酷┃秒播",
       "type": 3,
       "api": "csp_TianTianGuard",
       "searchable": 1,
@@ -139,7 +155,7 @@
         "site": 2
       },
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
+      "jar": "./lib/BU07xxy8.png;md5;6ad24e313c3b82e27338e32339de2f4f"
     },
     {
       "key": "糯米",
@@ -150,16 +166,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/G0sdE6Es.png;md5;4ab4f0bcb61756d14586d23984cb2069"
-    },
-    {
-      "key": "电影",
-      "name": "🎬电影┃弹幕",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "ext": "sHR2rlsfjI4L3t4RXQMknwVOqdD9gPzfYgo/IDVldfFlUVRxMhFa2sMsM3jbFDHf0JeBOxGU/o2kx5CXvQT/L2bX6V7O1a4e1OUxpnYI11YpBWQjTFE4gjUC579JwV+7XsWgMJ35bTzURfWg+DYOBr8Qaiyjp0ceuD6TwFyfcNku38N3wEf629K9W7TYaAEe",
-      "jar": "./lib/0530-1.jar;md5;e95605abf174b6c0fc155c7247aa0bdb"
+      "jar": "./lib/BU07xxy8.png;md5;6ad24e313c3b82e27338e32339de2f4f"
     }
   ],
   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
