@@ -4,52 +4,7 @@ https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/sdr4kvideo/playlist.m3u8
 #EXTINF:-1 tvg-name="4K60PHLG-HEVC-EAC3测试" tvg-logo="https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/tg.jpg" group-title="4K频道",4K60PHLG-HEVC-EAC3测试
 https://cdn.jsdelivr.net/gh/feiyang666999/testvideo/hlg4kvideo/playlist.m3u8
 
-#EXTINF:-1,tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://11.112114.xyz/logo/CCTV1.png" group-title="BST-央视",CCTV-1HD-BST
-http://192.168.1.120:35455/bst/cctv1hd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://11.112114.xyz/logo/CCTV2.png" group-title="BST-央视",CCTV-2HD-BST
-http://192.168.1.120:35455/bst/cctv2hd8m@8000000.m3u8
-#EXTINF:-1,tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://11.112114.xyz/logo/CCTV3.png" group-title="BST-央视",CCTV-3HD-BST
-http://192.168.1.120:35455/bst/cctv3hd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://11.112114.xyz/logo/CCTV4.png" group-title="BST-央视",CCTV-4HD-BST
-http://192.168.1.120:35455/bst/cctv4hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://11.112114.xyz/logo/CCTV5.png" group-title="BST-央视",CCTV-5HD-BST
-http://192.168.1.120:35455/bst/cctv5hd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://11.112114.xyz/logo/CCTV6.png" group-title="BST-央视",CCTV-6HD-BST
-http://192.168.1.120:35455/bst/cctv6hd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://11.112114.xyz/logo/CCTV7.png" group-title="BST-央视",CCTV-7HD-BST
-http://192.168.1.120:35455/bst/cctv7hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://11.112114.xyz/logo/CCTV8.png" group-title="BST-央视",CCTV-8HD-BST
-http://192.168.1.120:35455/bst/cctv8hd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://11.112114.xyz/logo/CCTV9.png" group-title="BST-央视",CCTV-9HD-BST
-http://192.168.1.120:35455/bst/cctv9hd4mc@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://11.112114.xyz/logo/CCTV10.png" group-title="BST-央视",CCTV-10HD-BST
-http://192.168.1.120:35455/bst/cctv10hd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://11.112114.xyz/logo/CCTV11.png" group-title="BST-央视",CCTV-11HD-BST
-http://192.168.1.120:35455/bst/cctv11hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://11.112114.xyz/logo/CCTV12.png" group-title="BST-央视",CCTV-12HD-BST
-http://192.168.1.120:35455/bst/cctv12hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="BTV新闻" tvg-name="BTV新闻" tvg-logo="https://11.112114.xyz/logo/CCTV13.png" group-title="BST-央视",CCTV-新闻HD-BST
-http://192.168.1.120:35455/bst/cctv13hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://11.112114.xyz/logo/CCTV14.png" group-title="BST-央视",CCTV-少儿HD-BST
-http://192.168.1.120:35455/bst/cctvsehd@4000000.m3u8
-#EXTINF:-1,tvg-id="动感音乐" tvg-name="动感音乐" tvg-logo="https://11.112114.xyz/logo/CCTV15.png" group-title="BST-央视",CCTV-音乐HD-BST
-http://192.168.1.120:35455/bst/cctvyyhd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://11.112114.xyz/logo/CCTV16.png" group-title="BST-央视",CCTV-16HD-BST
-http://192.168.1.120:35455/bst/cctv16hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://11.112114.xyz/logo/CCTV17.png" group-title="BST-央视",CCTV-17HD-BST
-http://192.168.1.120:35455/bst/cctv17hd4m@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://11.112114.xyz/logo/CCTV5+.png" group-title="BST-央视",CCTV-5+HD-BST
-http://192.168.1.120:35455/bst/cctv5phd@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://11.112114.xyz/logo/CCTV3.png" group-title="BST-央视",CCTV-3-BST
-http://192.168.1.120:35455/bst/cctv3hdhai@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://11.112114.xyz/logo/CCTV5.png" group-title="BST-央视",CCTV-5-BST
-http://192.168.1.120:35455/bst/cctv5hdhai@4000000.m3u8
-#EXTINF:-1,tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://11.112114.xyz/logo/CCTV6.png" group-title="BST-央视",CCTV-6-BST
-http://192.168.1.120:35455/bst/cctv6@1300000.m3u8
-#EXTINF:-1,tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://11.112114.xyz/logo/CCTV8.png" group-title="BST-央视",CCTV-8-BST
-http://192.168.1.120:35455/bst/cctv8@1300000.m3u8
-#EXTINF:-1,tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://11.112114.xyz/logo/CGTN.png" group-title="BST-央视",CGTN-BST
-http://192.168.1.120:35455/bst/cctvnews@2500000.m3u8
+
 #EXTINF:-1,tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://11.112114.xyz/logo/东方卫视.png" group-title="BST-卫视",东方卫视HD-BST
 http://192.168.1.120:35455/bst/hddfws@4000000.m3u8
 #EXTINF:-1,tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://11.112114.xyz/logo/河北卫视.png" group-title="BST-卫视",河北卫视HD-BST
@@ -200,6 +155,7 @@ http://192.168.1.120:35455/bst/yggwsd2d5m@2500000.m3u8
 http://192.168.1.120:35455/bst/ssws2d5m@2500000.m3u8
 #EXTINF:-1,tvg-id="乐游" tvg-name="乐游" tvg-logo="https://11.112114.xyz/logo/乐游.png" group-title="BST-其他",乐游-BST
 http://192.168.1.120:35455/bst/qjshd@4000000.m3u8
+
 
 #EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/2201/057/821/202204010054_1626677502161_H169_1080.jpg"  tvg-name="cctv1" group-title="央视", CCTV1综合
 http://192.168.1.120:35455/mgtv/608807420.m3u8
@@ -501,6 +457,55 @@ http://192.168.1.120:35455/nptv/gansu.m3u8
 http://192.168.1.120:35455/nptv/yunnan.m3u8
 #EXTINF:-1,tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://11.112114.xyz/logo/兵团卫视.png" group-title="卫视",兵团卫视-NPTV
 https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
+
+
+#EXTINF:-1,tvg-id="CCTV1" tvg-name="CCTV1" tvg-logo="https://11.112114.xyz/logo/CCTV1.png" group-title="BST-央视",CCTV-1HD-BST
+http://192.168.1.120:35455/bst/cctv1hd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV2" tvg-name="CCTV2" tvg-logo="https://11.112114.xyz/logo/CCTV2.png" group-title="BST-央视",CCTV-2HD-BST
+http://192.168.1.120:35455/bst/cctv2hd8m@8000000.m3u8
+#EXTINF:-1,tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://11.112114.xyz/logo/CCTV3.png" group-title="BST-央视",CCTV-3HD-BST
+http://192.168.1.120:35455/bst/cctv3hd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV4" tvg-name="CCTV4" tvg-logo="https://11.112114.xyz/logo/CCTV4.png" group-title="BST-央视",CCTV-4HD-BST
+http://192.168.1.120:35455/bst/cctv4hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://11.112114.xyz/logo/CCTV5.png" group-title="BST-央视",CCTV-5HD-BST
+http://192.168.1.120:35455/bst/cctv5hd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://11.112114.xyz/logo/CCTV6.png" group-title="BST-央视",CCTV-6HD-BST
+http://192.168.1.120:35455/bst/cctv6hd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV7" tvg-name="CCTV7" tvg-logo="https://11.112114.xyz/logo/CCTV7.png" group-title="BST-央视",CCTV-7HD-BST
+http://192.168.1.120:35455/bst/cctv7hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://11.112114.xyz/logo/CCTV8.png" group-title="BST-央视",CCTV-8HD-BST
+http://192.168.1.120:35455/bst/cctv8hd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV9" tvg-name="CCTV9" tvg-logo="https://11.112114.xyz/logo/CCTV9.png" group-title="BST-央视",CCTV-9HD-BST
+http://192.168.1.120:35455/bst/cctv9hd4mc@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV10" tvg-name="CCTV10" tvg-logo="https://11.112114.xyz/logo/CCTV10.png" group-title="BST-央视",CCTV-10HD-BST
+http://192.168.1.120:35455/bst/cctv10hd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://11.112114.xyz/logo/CCTV11.png" group-title="BST-央视",CCTV-11HD-BST
+http://192.168.1.120:35455/bst/cctv11hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://11.112114.xyz/logo/CCTV12.png" group-title="BST-央视",CCTV-12HD-BST
+http://192.168.1.120:35455/bst/cctv12hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="BTV新闻" tvg-name="BTV新闻" tvg-logo="https://11.112114.xyz/logo/CCTV13.png" group-title="BST-央视",CCTV-新闻HD-BST
+http://192.168.1.120:35455/bst/cctv13hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="IPTV少儿动画" tvg-name="IPTV少儿动画" tvg-logo="https://11.112114.xyz/logo/CCTV14.png" group-title="BST-央视",CCTV-少儿HD-BST
+http://192.168.1.120:35455/bst/cctvsehd@4000000.m3u8
+#EXTINF:-1,tvg-id="动感音乐" tvg-name="动感音乐" tvg-logo="https://11.112114.xyz/logo/CCTV15.png" group-title="BST-央视",CCTV-音乐HD-BST
+http://192.168.1.120:35455/bst/cctvyyhd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV16" tvg-name="CCTV16" tvg-logo="https://11.112114.xyz/logo/CCTV16.png" group-title="BST-央视",CCTV-16HD-BST
+http://192.168.1.120:35455/bst/cctv16hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://11.112114.xyz/logo/CCTV17.png" group-title="BST-央视",CCTV-17HD-BST
+http://192.168.1.120:35455/bst/cctv17hd4m@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV5+" tvg-name="CCTV5+" tvg-logo="https://11.112114.xyz/logo/CCTV5+.png" group-title="BST-央视",CCTV-5+HD-BST
+http://192.168.1.120:35455/bst/cctv5phd@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV3" tvg-name="CCTV3" tvg-logo="https://11.112114.xyz/logo/CCTV3.png" group-title="BST-央视",CCTV-3-BST
+http://192.168.1.120:35455/bst/cctv3hdhai@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV5" tvg-name="CCTV5" tvg-logo="https://11.112114.xyz/logo/CCTV5.png" group-title="BST-央视",CCTV-5-BST
+http://192.168.1.120:35455/bst/cctv5hdhai@4000000.m3u8
+#EXTINF:-1,tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://11.112114.xyz/logo/CCTV6.png" group-title="BST-央视",CCTV-6-BST
+http://192.168.1.120:35455/bst/cctv6@1300000.m3u8
+#EXTINF:-1,tvg-id="CCTV8" tvg-name="CCTV8" tvg-logo="https://11.112114.xyz/logo/CCTV8.png" group-title="BST-央视",CCTV-8-BST
+http://192.168.1.120:35455/bst/cctv8@1300000.m3u8
+#EXTINF:-1,tvg-id="CGTN" tvg-name="CGTN" tvg-logo="https://11.112114.xyz/logo/CGTN.png" group-title="BST-央视",CGTN-BST
+http://192.168.1.120:35455/bst/cctvnews@2500000.m3u8
+
 
 #EXTINF:-1,tvg-id="咪咕4K" tvg-name="咪咕4K" tvg-logo="https://11.112114.xyz/logo/咪咕4K.png" group-title="4K频道",咪咕4K-1
 http://192.168.1.120:35455/itv/3000000010000005180.m3u8?cdn=FifastbLive
