@@ -1,5 +1,5 @@
 {
-  "spider": "./XzWYuCoI.png;md5;bbf1cb84522bf22049e7345040384d4d",
+  "spider": "./J7YbBOr5.png;md5;be6632f065129f42dd24e0121c34d79f",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -124,16 +124,6 @@
       "timeout": 25
     },
     {
-      "key": "表哥",
-      "name": "👨🏻‍🦱表哥┃4K",
-      "type": 3,
-      "api": "csp_DbgGuard",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 25
-    },
-    {
       "key": "至臻",
       "name": "💌至臻┃4K",
       "type": 3,
@@ -208,6 +198,26 @@
       "name": "🎸盘他┃4K",
       "type": 3,
       "api": "csp_PantaGuard",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 25
+    },
+    {
+      "key": "海绵",
+      "name": "🧽海绵┃4K",
+      "type": 3,
+      "api": "csp_HaiMianGuard",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 25
+    },
+    {
+      "key": "云巢",
+      "name": "☁️云巢┃4K",
+      "type": 3,
+      "api": "csp_PeccGuard",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
@@ -899,16 +909,6 @@
       "timeout": 25
     },
     {
-      "key": "盘搜",
-      "name": "🙀盘搜┃搜索",
-      "type": 3,
-      "api": "csp_PanSoGuard",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "timeout": 25
-    },
-    {
       "key": "影搜",
       "name": "😼影子┃搜索",
       "type": 3,
@@ -939,10 +939,10 @@
       "timeout": 25
     },
     {
-      "key": "逸搜",
-      "name": "🌧逸搜┃搜索",
+      "key": "找盘",
+      "name": "🎾找盘┃搜索",
       "type": 3,
-      "api": "csp_TianYiSoGuard",
+      "api": "csp_V2PanGuard",
       "searchable": 1,
       "filterable": 1,
       "changeable": 0,
