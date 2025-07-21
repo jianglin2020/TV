@@ -83,7 +83,7 @@
       "style": {
         "type": "list"
       },
-      "jar": "./lib/J7YbBOr5.png;md5;be6632f065129f42dd24e0121c34d79f"
+      "jar": "./lib/zOfH5pid.png;md5;bc5701d8372328b300bc4e0e46808646"
     },
     {
       "key": "瓜子",
@@ -94,7 +94,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/J7YbBOr5.png;md5;be6632f065129f42dd24e0121c34d79f"
+      "jar": "./lib/zOfH5pid.png;md5;bc5701d8372328b300bc4e0e46808646"
     },
     {
       "key": "咖啡",
@@ -105,7 +105,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/J7YbBOr5.png;md5;be6632f065129f42dd24e0121c34d79f"
+      "jar": "./lib/zOfH5pid.png;md5;bc5701d8372328b300bc4e0e46808646"
     }
   ],
   "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
@@ -114,13 +114,6 @@
       "name": "iptv",
       "type": 0,
       "url": "./lib/iptv.m3u",
-      "playerType": 1,
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
-      "name": "iptv2",
-      "type": 0,
-      "url": "./lib/iptv2.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },

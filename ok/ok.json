@@ -1,5 +1,5 @@
 {
-  "spider": "./J7YbBOr5.png;md5;be6632f065129f42dd24e0121c34d79f",
+  "spider": "./zOfH5pid.png;md5;bc5701d8372328b300bc4e0e46808646",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -214,20 +214,20 @@
       "timeout": 25
     },
     {
-      "key": "云巢",
-      "name": "☁️云巢┃4K",
+      "key": "雷鲸",
+      "name": "🐳雷鲸┃4K",
       "type": 3,
-      "api": "csp_PeccGuard",
+      "api": "csp_LeiJingGuard",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
       "timeout": 25
     },
     {
-      "key": "雷鲸",
-      "name": "🐳雷鲸┃4K",
+      "key": "云巢",
+      "name": "☁️云巢┃4K",
       "type": 3,
-      "api": "csp_LeiJingGuard",
+      "api": "csp_PeccGuard",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
@@ -899,6 +899,16 @@
       "timeout": 25
     },
     {
+      "key": "音海",
+      "name": "🎸音海┃搜索",
+      "type": 3,
+      "api": "csp_YinHaiGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "timeout": 25
+    },
+    {
       "key": "爱盘",
       "name": "❤️爱盘┃搜索",
       "type": 3,
@@ -1074,6 +1084,13 @@
     "mozai.4gtv.tv"
   ],
   "lives": [
+    {
+      "name": "AI直播",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/Li_xZdAC.bmp",
+      "playerType": 2,
+      "timeout": 10
+    },
     {
       "name": "综合",
       "type": 0,
