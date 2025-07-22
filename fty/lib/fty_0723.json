@@ -72,6 +72,20 @@
       }
     },
     {
+      "key": "雷鲸",
+      "name": "🐳雷鲸┃天翼",
+      "type": 3,
+      "api": "csp_LeiJingGuard",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 25,
+      "style": {
+        "type": "list"
+      },
+      "jar": "./lib/7y-ZyTOB.png;md5;2650d07604794590a6bf40f887fa7f39"
+    },
+    {
       "key": "瓜子",
       "name": "🍉瓜子┃App",
       "type": 3,
@@ -118,6 +132,20 @@
       "switchable": 0,
       "ext": {
         "siteUrl": "https://www.leijing1.com/",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
+      },
+      "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
+    },
+    {
+      "key": "盘搜天翼",
+      "name": "🐈盘搜┃天翼",
+      "type": 3,
+      "api": "csp_PanSou",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "siteUrl": "https://www.tianyiso.com",
         "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
       },
       "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
