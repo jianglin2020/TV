@@ -121,5 +121,3 @@ webview://https://yangshipin.cn/tv/home?pid=600190402
 webview://https://yangshipin.cn/tv/home?pid=600190406
 #EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" tvg-logo="https://live.fanmingming.cn/tv/西藏卫视.png" group-title="卫视",西藏卫视
 webview://https://yangshipin.cn/tv/home?pid=600190403
-#EXTINF:-1 tvg-id="大湾区卫视" tvg-name="大湾区卫视" tvg-logo="https://live.fanmingming.cn/tv/大湾区卫视.png" group-title="卫视",大湾区卫视
-webview://https://www.gdtv.cn/tvChannelDetail/51
