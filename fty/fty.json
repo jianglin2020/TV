@@ -136,6 +136,20 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
+      "name": "iptv2",
+      "type": 0,
+      "url": "./lib/iptv2.m3u",
+      "playerType": 1,
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "mursor",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/iptv.m3u",
+      "playerType": 1,
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
       "name": "肥羊",
       "type": 0,
       "url": "http://192.168.1.120:35455/tv.m3u",
