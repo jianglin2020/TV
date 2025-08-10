@@ -11,18 +11,35 @@ print(f"当前工作目录切换到：{os.getcwd()}")
 
 # 文件路径
 file_to_update = "iptv_dome.m3u"  # 第一个文件路径（需要更新的文件）
-file_with_new_addresses = "tv.m3u"  # 第二个文件路径（包含新地址的文件）
+file_with_new_addresses = "mursor.m3u"  # 第二个文件路径（包含新地址的文件）
 output_file = "iptv_update.m3u"  # 输出文件路径
 
 # 读取新地址文件并构建频道名称到多个地址的映射
 channel_address_map = {}
+whitelist = ["CCTV4欧洲", "CCTV4美洲"]
 with open(file_with_new_addresses, "r", encoding="utf-8") as file:
     lines = file.readlines()
     for i in range(len(lines)):
-        # 找到频道描述行
-        match = re.match(r'#EXTINF:-1.*?tvg-name="(.*?)".*', lines[i])
-        if match and i + 1 < len(lines):  # 确保下一行为地址行
-            raw_channel_name = match.group(1).strip()
+        # 先尝试匹配 tvg-name 属性
+        match_tvg_name = re.match(r'#EXTINF:-1.*?tvg-name="(.*?)"', lines[i])
+        if match_tvg_name:
+            raw_channel_name = match_tvg_name.group(1).strip()
+        else:
+            # 如果没有 tvg-name 属性，则匹配频道名称（逗号后的部分）
+            match_channel_name = re.match(r'#EXTINF:-1.*?,(.*)', lines[i])
+            if match_channel_name:
+                raw_channel_name1 = match_channel_name.group(1).strip()
+                # print(raw_channel_name1)
+                if raw_channel_name1 not in whitelist:
+                    # 在这里直接处理频道名称
+                    core_match = re.match(r'(CCTV\d+\+?|[\u4e00-\u9fa5]+卫视)', raw_channel_name1.upper())
+                    if core_match:
+                        raw_channel_name = core_match.group(1)
+            else:
+                raw_channel_name = None
+
+        if raw_channel_name and i + 1 < len(lines):  # 确保下一行为地址行
+            # raw_channel_name = raw_channel_name.group(1).strip()
             # 将频道名称转换为大写，以便匹配
             normalized_name = raw_channel_name.upper()
             if normalized_name not in channel_address_map:
