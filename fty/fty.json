@@ -139,6 +139,7 @@
       "name": "iptv2",
       "type": 0,
       "url": "./lib/iptv2.m3u",
+      "ua": "okHttp/Mursor-1.0.0",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
@@ -146,6 +147,7 @@
       "name": "mursor",
       "type": 0,
       "url": "https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/iptv.m3u",
+      "ua": "okHttp/Mursor-1.0.0",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
