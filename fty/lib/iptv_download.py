@@ -32,7 +32,7 @@ def download_m3u(url, save_path=None):
 
 if __name__ == "__main__":
     # 需要下载的URL
-    m3u_url = "https://raw.githubusercontent.com/Mursor/LIVE/refs/heads/main/iptv.m3u"
+    m3u_url = "https://raw.githubusercontent.com/Mursor1985/LIVE/refs/heads/main/iptv.m3u"
     
     # 自定义保存路径（可选）
     custom_path = r"./fty/lib/mursor.m3u"
