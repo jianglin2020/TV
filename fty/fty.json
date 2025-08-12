@@ -132,6 +132,7 @@
       "name": "iptv",
       "type": 0,
       "url": "./lib/iptv.m3u",
+      "ua": "okHttp/Mod-1.0.0",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
@@ -139,7 +140,6 @@
       "name": "iptv2",
       "type": 0,
       "url": "./lib/iptv2.m3u",
-      "ua": "okHttp/Mod-1.0.0",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
