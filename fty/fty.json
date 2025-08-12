@@ -132,6 +132,13 @@
       "name": "iptv",
       "type": 0,
       "url": "./lib/iptv.m3u",
+      "playerType": 1,
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "iptv2",
+      "type": 0,
+      "url": "./lib/iptv2.m3u",
       "ua": "okHttp/Mod-1.0.0",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
@@ -141,13 +148,6 @@
       "type": 0,
       "url": "https://raw.githubusercontent.com/Mursor1985/LIVE/refs/heads/main/iptv.m3u",
       "ua": "okHttp/Mod-1.0.0",
-      "playerType": 1,
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
-      "name": "肥羊",
-      "type": 0,
-      "url": "http://192.168.1.120:35455/tv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     }
