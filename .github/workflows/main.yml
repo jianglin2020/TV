@@ -21,11 +21,12 @@ jobs:
           
           # 创建目标目录（如果不存在）
           TARGET_DIR="fty/lib"
+          OUTPUT_FILE="mursor.m3u"  # 自定义输出文件名
           mkdir -p "$TARGET_DIR"
-          echo "📁 目标目录: $TARGET_DIR"
+          echo "📁 目标文件: $TARGET_DIR/$OUTPUT_FILE"
 
           base="https://sub.ottiptv.cc"
-          files=("iptv.m3u")
+          source_files=("iptv.m3u")  # 源文件列表
 
           # ---- 带重试机制的下载函数 ----
           download_with_retry () {
@@ -55,31 +56,29 @@ jobs:
             return 1
           }
 
-          # 下载所有文件到目标目录
-          for f in "${files[@]}"; do
-            download_with_retry "${base}/${f}" "${TARGET_DIR}/${f}" || true
+          # 下载所有文件到目标目录（使用自定义文件名）
+          for f in "${source_files[@]}"; do
+            download_with_retry "${base}/${f}" "${TARGET_DIR}/${OUTPUT_FILE}" || true
           done
 
           echo "📊 文件下载状态："
-          for f in "${files[@]}"; do
-            file_path="${TARGET_DIR}/${f}"
-            if [ -s "$file_path" ]; then
-              echo "✅ $file_path - $(wc -c < "$file_path") 字节"
-            else
-              echo "❌ $file_path - 文件不存在或为空"
-            fi
+          file_path="${TARGET_DIR}/${OUTPUT_FILE}"
+          if [ -s "$file_path" ]; then
+            echo "✅ $file_path - $(wc -c < "$file_path") 字节"
+          else
+            echo "❌ $file_path - 文件不存在或为空"
           done
 
           git config --local user.name  "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
           # 只有真正发生变更时才提交
-          if git diff --quiet -- "${TARGET_DIR}/*.m3u"; then
+          if git diff --quiet -- "$file_path"; then
             echo "ℹ️ 没有检测到文件变更，跳过提交"
             exit 0
           fi
 
-          git add "${TARGET_DIR}/*.m3u"
+          git add "$file_path"
           git commit -m "chore: auto-update IPTV playlists - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           echo "✅ 文件已提交"
 
