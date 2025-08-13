@@ -1,4 +1,4 @@
-name: Sync IPTV Playlists
+ name: Sync IPTV Playlists
 
 on:
   schedule:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Download and Update IPTV Playlists
         run: |
           set -e
@@ -21,12 +21,12 @@ jobs:
           
           # 创建目标目录（如果不存在）
           TARGET_DIR="fty/lib"
-          OUTPUT_FILE="mursor.m3u"  # 自定义输出文件名
+          OUTPUT_FILE="mursor.m3u"  # 使用您实际的文件名
           mkdir -p "$TARGET_DIR"
           echo "📁 目标文件: $TARGET_DIR/$OUTPUT_FILE"
 
           base="https://sub.ottiptv.cc"
-          source_files=("iptv.m3u")  # 源文件列表
+          source_file="iptv.m3u"  # 源文件名
 
           # ---- 带重试机制的下载函数 ----
           download_with_retry () {
@@ -56,18 +56,17 @@ jobs:
             return 1
           }
 
-          # 下载所有文件到目标目录（使用自定义文件名）
-          for f in "${source_files[@]}"; do
-            download_with_retry "${base}/${f}" "${TARGET_DIR}/${OUTPUT_FILE}" || true
-          done
+          # 下载单个文件
+          download_with_retry "${base}/${source_file}" "${TARGET_DIR}/${OUTPUT_FILE}" || true
 
+          # 修复：移除了多余的循环结构
           echo "📊 文件下载状态："
           file_path="${TARGET_DIR}/${OUTPUT_FILE}"
           if [ -s "$file_path" ]; then
             echo "✅ $file_path - $(wc -c < "$file_path") 字节"
           else
             echo "❌ $file_path - 文件不存在或为空"
-          done
+          fi  # 注意这里是 fi 而不是 done
 
           git config --local user.name  "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -81,10 +80,3 @@ jobs:
           git add "$file_path"
           git commit -m "chore: auto-update IPTV playlists - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           echo "✅ 文件已提交"
-
-      - name: Push changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.APT }}
-        run: |
-          git push origin ${{ github.ref_name }}
-          echo "🚀 更新已推送到仓库"
