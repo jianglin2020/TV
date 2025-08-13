@@ -24,7 +24,7 @@ jobs:
           mkdir -p "$TARGET_DIR"
           echo "📁 目标目录: $TARGET_DIR"
 
-          base="https://mursor.ottiptv.cc"
+          base="https://sub.ottiptv.cc"
           files=("iptv.m3u")
 
           # ---- 带重试机制的下载函数 ----
