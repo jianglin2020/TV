@@ -80,3 +80,10 @@ jobs:
           git add "$file_path"
           git commit -m "chore: auto-update IPTV playlists - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           echo "✅ 文件已提交"
+
+      - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.APT }}
+        run: |
+          git push origin ${{ github.ref_name }}
+          echo "🚀 更新已推送到仓库"
