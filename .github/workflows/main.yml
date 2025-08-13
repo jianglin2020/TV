@@ -1,4 +1,4 @@
- name: Sync IPTV Playlists
+name: Sync IPTV Playlists
 
 on:
   schedule:
