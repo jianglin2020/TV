@@ -11,8 +11,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    env:
-      TOKEN: ${{ secrets.M3U_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -20,11 +18,16 @@ jobs:
         run: |
           set -e
           echo "🎵 开始下载 IPTV 播放列表..."
+          
+          # 创建目标目录（如果不存在）
+          TARGET_DIR="fty/lib"
+          mkdir -p "$TARGET_DIR"
+          echo "📁 目标目录: $TARGET_DIR"
 
           base="https://mursor.ottiptv.cc"
           files=("iptv.m3u")
 
-          # ---- 只在下载成功后才覆盖原文件 ----
+          # ---- 带重试机制的下载函数 ----
           download_with_retry () {
             local url="$1"
             local outfile="$2"
@@ -52,17 +55,18 @@ jobs:
             return 1
           }
 
-          # 下载所有文件
+          # 下载所有文件到目标目录
           for f in "${files[@]}"; do
-            download_with_retry "${base}/${f}?token=${TOKEN}" "$f" || true
+            download_with_retry "${base}/${f}" "${TARGET_DIR}/${f}" || true
           done
 
           echo "📊 文件下载状态："
           for f in "${files[@]}"; do
-            if [ -s "$f" ]; then
-              echo "✅ $f - $(wc -c < "$f") 字节"
+            file_path="${TARGET_DIR}/${f}"
+            if [ -s "$file_path" ]; then
+              echo "✅ $file_path - $(wc -c < "$file_path") 字节"
             else
-              echo "❌ $f - 文件不存在或为空"
+              echo "❌ $file_path - 文件不存在或为空"
             fi
           done
 
@@ -70,18 +74,18 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
           # 只有真正发生变更时才提交
-          if git diff --quiet -- *.m3u; then
+          if git diff --quiet -- "${TARGET_DIR}/*.m3u"; then
             echo "ℹ️ 没有检测到文件变更，跳过提交"
             exit 0
           fi
 
-          git add *.m3u
+          git add "${TARGET_DIR}/*.m3u"
           git commit -m "chore: auto-update IPTV playlists - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
           echo "✅ 文件已提交"
 
       - name: Push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.APT }}
         run: |
           git push origin ${{ github.ref_name }}
           echo "🚀 更新已推送到仓库"
