@@ -73,9 +73,7 @@ http://221.199.193.27:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=
 http://221.199.193.64:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.122:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.76:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" tvg-logo="https://live.fanmingming.cn/tv/CCTV11.png" group-title="央视",CCTV-11 戏曲
-http://1.198.67.131:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 http://120.202.94.181:9446/tsfile/live/0011_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="央视",CCTV-12 社会与法
 http://221.199.193.27:9901/tsfile/live/0012_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -125,7 +123,6 @@ http://221.199.193.64:9901/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1&authid=
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/湖南卫视.png" group-title="卫视",湖南卫视
 http://221.199.193.27:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.180:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 http://219.137.203.150:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.64:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.196:9901/tsfile/live/0128_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -145,14 +142,12 @@ http://221.199.193.64:9901/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=
 #EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.cn/tv/重庆卫视.png" group-title="卫视",重庆卫视
 http://221.199.193.196:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.180:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.76:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.213:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.27:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.122:9901/tsfile/live/0142_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="深圳卫视" tvg-name="深圳卫视" tvg-logo="https://live.fanmingming.cn/tv/深圳卫视.png" group-title="卫视",深圳卫视
 http://221.199.193.180:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 http://120.202.94.181:9446/tsfile/live/0126_1.m3u8?key=txiptv&playlive=0&authid=0
 http://221.199.193.27:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.76:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -161,14 +156,12 @@ http://221.199.193.64:9901/tsfile/live/0126_1.m3u8?key=txiptv&playlive=1&authid=
 #EXTINF:-1 tvg-id="广东卫视" tvg-name="广东卫视" tvg-logo="https://live.fanmingming.cn/tv/广东卫视.png" group-title="卫视",广东卫视
 http://221.199.193.196:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.76:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
 http://117.141.162.238:8181/tsfile/live/faacts/1106_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.27:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.64:9901/tsfile/live/0125_1.m3u8?key=txiptv&playlive=1&authid=0
 http://120.202.94.181:9446/tsfile/live/0125_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/四川卫视.png" group-title="卫视",四川卫视
 http://221.199.193.180:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.27:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.76:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.196:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -191,7 +184,6 @@ http://221.199.193.27:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=
 http://221.199.193.76:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.213:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.64:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0138_1.m3u8?key=txiptv&playlive=1&authid=0
 http://117.141.162.238:8181/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.cn/tv/河北卫视.png" group-title="卫视",河北卫视
 http://221.199.193.196:9901/tsfile/live/0117_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -228,7 +220,6 @@ http://221.199.193.122:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid
 http://221.199.193.196:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.64:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.213:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
-http://1.198.67.131:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.76:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.27:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 http://221.199.193.180:9901/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -250,8 +241,6 @@ http://221.199.193.27:9901/tsfile/live/0109_1.m3u8?key=txiptv&playlive=1&authid=
 http://221.199.193.237:9901/tsfile/live/0109_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" tvg-logo="https://live.fanmingming.cn/tv/甘肃卫视.png" group-title="卫视",甘肃卫视
 http://110.80.17.38:9999/tsfile/live/0141_1.m3u8?key=txiptv&playlive=0&authid=0
-#EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" tvg-logo="https://live.fanmingming.cn/tv/吉林卫视.png" group-title="卫视",吉林卫视
-http://1.198.67.131:9901/tsfile/live/0116_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" tvg-logo="https://live.fanmingming.cn/tv/新疆卫视.png" group-title="卫视",新疆卫视
 http://110.80.17.38:9999/tsfile/live/0018_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="https://live.fanmingming.cn/tv/兵团卫视.png" group-title="卫视",兵团卫视
