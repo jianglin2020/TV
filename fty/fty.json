@@ -134,7 +134,7 @@
       "url": "./lib/iptv.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.1.0"
     },
     {
       "name": "iptv2",
@@ -149,7 +149,7 @@
       "url": "https://raw.githubusercontent.com/Mursor1985/LIVE/refs/heads/main/iptv.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.1.0"
     }
   ]
 }
