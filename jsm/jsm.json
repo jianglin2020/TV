@@ -29,7 +29,7 @@
       "style": {
         "type": "list"
       },
-      "ext": "file://TV/alist.json",
+      "ext": "file://TV/alist2.json",
       "timeout": 15
     }
   ]
