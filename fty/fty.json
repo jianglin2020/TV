@@ -121,6 +121,7 @@
       "switchable": 0,
       "ext": {
         "siteUrl": "https://www.leijing1.com/",
+        "cookie": "JSESSIONID=1567415446214C9674B87F1652BC2BD2; cms_accessToken=dc827bf934a94fe7934f19fdd0db6ae5; cms_refreshToken=52e6baa0e928412d9bb15d97a2a828e5",
         "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
       },
       "jar": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412"
