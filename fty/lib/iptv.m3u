@@ -36,6 +36,10 @@ https://mursor.ottiptv.cc/mst/cctv16.m3u8
 https://mursor.ottiptv.cc/mcp/cctv16.m3u8
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" group-title="央视",CCTV-17 农业农村
 https://mursor.ottiptv.cc/migu/673168256.m3u8?migutoken=e9748d2b2ab88d6b2c5c6971fc9bdc98ee0813756d139d1870fe8eac5cf4c1d248457e036a6d53821667797b9c518579a7cec0404aba2c6b5dcaff5be4ead906a6e914be8adf68d9b2078936ad
+#EXTINF:-1 tvg-id="CCTV4k" tvg-name="CCTV4k" tvg-logo="https://live.fanmingming.com/tv/CCTV4K.png" group-title="央视",CCTV-4K 超高清
+https://freetv.top/m4k/cctv4k.m3u8
+https://freetv.top/m2k/cctv4k.m3u8
+
 #EXTINF:-1 tvg-id="北京卫视" tvg-name="北京卫视" tvg-logo="https://live.fanmingming.com/tv/北京卫视.png" group-title="卫视",北京卫视
 https://mursor.ottiptv.cc/mcp/beijing.m3u8
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png" group-title="卫视",东方卫视
