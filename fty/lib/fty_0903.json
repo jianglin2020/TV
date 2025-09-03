@@ -1,19 +1,19 @@
 {
-  "spider": "./lib/RinpMUTd.png;md5;198f97bcffbf5e17ed99853cf3c881a7",
+  "spider": "./lib/spider.jar",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "sites": [
     {
       "key": "豆豆",
       "name": "🅱豆瓣┃推荐",
       "type": 3,
-      "api": "csp_DoubanGuard",
+      "api": "csp_Douban",
       "searchable": 0
     },
     {
-      "key": "csp_AListGuard",
+      "key": "csp_AList",
       "name": "🦋我的┃AList",
       "type": 3,
-      "api": "csp_AListGuard",
+      "api": "csp_AList",
       "searchable": 1,
       "filterable": 1,
       "changeable": 0,
@@ -27,31 +27,49 @@
       "key": "玩偶",
       "name": "👽玩偶┃在线",
       "type": 3,
-      "api": "csp_WoggGuard",
+      "api": "csp_Wogg",
       "searchable": 1,
+      "quickSearch": 1,
       "filterable": 1,
-      "changeable": 1,
-      "timeout": 30
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "wogg": true,
+        "danmu": false
+      }
     },
     {
       "key": "夸克至臻",
       "name": "💌至臻┃在线",
       "type": 3,
-      "api": "csp_ZhiZhenGuard",
+      "api": "csp_Wobg",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
-      "timeout": 25
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "http://xiaomi666.fun",
+        "danmu": false
+      }
     },
     {
       "key": "蜡笔",
       "name": "👠蜡笔┃在线",
       "type": 3,
-      "api": "csp_LabiGuard",
+      "api": "csp_Wobg",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
-      "timeout": 25
+      "ext": {
+        "token": "file://TV/ali_token.txt",
+        "cookie": "file://TV/quark_cookie.txt",
+        "uc_cookie": "file://TV/uc_cookie.txt",
+        "site": "https://feimao666.fun",
+        "danmu": false
+      }
     },
     {
       "key": "瓜子",
@@ -61,7 +79,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "timeout": 10
+      "timeout": 10,
+      "jar": "./lib/RinpMUTd.png;md5;198f97bcffbf5e17ed99853cf3c881a7"
     },
     {
       "key": "热播",
@@ -74,7 +93,8 @@
       "ext": {
         "site": 0
       },
-      "timeout": 10
+      "timeout": 10,
+      "jar": "./lib/RinpMUTd.png;md5;198f97bcffbf5e17ed99853cf3c881a7"
     },
     {
       "key": "TgYunPan",
