@@ -1,5 +1,5 @@
 {
-  "spider": "./RinpMUTd.png;md5;198f97bcffbf5e17ed99853cf3c881a7",
+  "spider": "./Rk80Tm-B.png;md5;db9e24529dc557e87f378d8da73146cf",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -277,19 +277,6 @@
       "timeout": 10
     },
     {
-      "key": "天天",
-      "name": "⛅️天天┃App",
-      "type": 3,
-      "api": "csp_TianTianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "site": 1
-      },
-      "timeout": 10
-    },
-    {
       "key": "文才",
       "name": "🌺文才┃在线",
       "type": 3,
@@ -327,6 +314,26 @@
       "name": "🍎苹果┃直连",
       "type": 3,
       "api": "csp_XpgGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "加菲",
+      "name": "🐱加菲┃App",
+      "type": 3,
+      "api": "csp_JiaFeiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "云云",
+      "name": "☁️云云┃App",
+      "type": 3,
+      "api": "csp_YunYunGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -519,28 +526,6 @@
       "timeout": 10
     },
     {
-      "key": "黑木耳",
-      "name": "🌻木耳┃无广",
-      "type": 1,
-      "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "changeable": 1,
-      "playUrl": "json:http://127.0.0.1:9978/proxy?do=parse&from=heimuer&url=",
-      "header": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-      },
-      "categories": [
-        "国产剧",
-        "国产动漫",
-        "日本动漫",
-        "港剧",
-        "韩剧",
-        "欧美剧",
-        "国产综艺"
-      ]
-    },
-    {
       "key": "星芽短剧",
       "name": "💖星芽┃短剧",
       "type": 3,
@@ -571,15 +556,14 @@
       "timeout": 10
     },
     {
-      "key": "ddys_js",
+      "key": "csp_Ddys",
       "name": "🍄低端┃在线",
       "type": 3,
+      "api": "csp_DdysGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "api": "https://im.feelec.com.cn/res/file.html?id=2c9a91099696ce4301974da3916550ff&file=drpy2.min.js",
-      "ext": "./lib/ddys.txt",
-      "timeout": 15
+      "timeout": 30
     },
     {
       "key": "yhdm",
@@ -609,16 +593,6 @@
       "searchable": 1,
       "changeable": 0,
       "timeout": 20
-    },
-    {
-      "key": "聚合直播",
-      "name": "📽️聚合┃直播",
-      "type": 3,
-      "api": "csp_LivingGuard",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 1,
-      "timeout": 10
     },
     {
       "key": "快手直播",
@@ -699,7 +673,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "json": "./lib/bili.txt"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/YJhVp-4r.bmp"
       },
       "timeout": 20
     },
@@ -716,7 +690,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "json": "./lib/biliych.txt"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/DLYuzBTJ.bmp"
       },
       "timeout": 20
     },
@@ -733,7 +707,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "json": "./lib/bilixs.txt"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/1JTNmUos.bmp"
       },
       "timeout": 20
     },
@@ -750,7 +724,7 @@
         "ratio": 1.433
       },
       "ext": {
-        "json": "./lib/bilixp.txt"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/iO5IVxTF.bmp"
       },
       "timeout": 20
     },
@@ -767,7 +741,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
-        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec8251e772b"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/dXwud0cD.bmp"
       }
     },
     {
@@ -783,7 +757,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
-        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec82537772c"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/KQ75Lxp5.bmp"
       }
     },
     {
@@ -799,7 +773,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
-        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec824cc7729"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/43ZKwmf_.bmp"
       }
     },
     {
@@ -815,7 +789,7 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
-        "json": "https://im.feelec.com.cn/res/file.html?id=2c9a91099584ed4901963ec824fd772a"
+        "json": "https://fs-im-kefu.7moor-fs2.com/im/2768a390-5474-11ea-afc9-7b323e3e16c0/mf6984kQ.bmp"
       }
     },
     {
@@ -1047,10 +1021,10 @@
     {
       "name": "AI直播",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/iptv.m3u",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/iptv.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.3.0.0"
     },
     {
       "name": "范明明",
@@ -1075,36 +1049,44 @@
       "timeout": 10
     },
     {
+      "name": "一起看",
+      "type": 3,
+      "api": "csp_HuyaGuard",
+      "url": "yqk",
+      "playerType": 2,
+      "timeout": 10
+    },
+    {
       "name": "肥羊虎牙一起看",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/huyayqk.m3u",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/huyayqk.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.3.0.0"
     },
     {
       "name": "肥羊B站直播",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/bililive.m3u",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/bililive.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.3.0.0"
     },
     {
       "name": "肥羊斗鱼一起看",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/douyuyqk.m3u",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/douyuyqk.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.3.0.0"
     },
     {
       "name": "肥羊YY轮播",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/mursor1985/LIVE/refs/heads/main/yylunbo.m3u",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/yylunbo.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.0.1"
+      "ua": "okHttp/Mod-1.3.0.0"
     }
   ],
   "ijk": [
