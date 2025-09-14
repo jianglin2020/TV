@@ -38,7 +38,7 @@
       "ext": {
         "commonConfig": "http://192.168.1.120:8010/peizhi.json",
         "siteUrl": "https://wogg.xxooo.cf",
-        "filter": "./json/wogg.json"
+        "filter": "./lib/wogg.json"
       }
     },
     {
@@ -51,8 +51,8 @@
       "changeable": 1,
       "ext": {
         "commonConfig": "http://192.168.1.120:8010/peizhi.json",
-        "siteUrl": "http://xiaomi666.fun",
-        "filter": "./json/wogg.json"
+        "siteUrl": "http://mihdr.top",
+        "filter": "./lib/wogg.json"
       }
     },
     {
@@ -66,7 +66,7 @@
       "ext": {
         "commonConfig": "http://192.168.1.120:8010/peizhi.json",
         "siteUrl": "https://feimao666.fun",
-        "filter": "./json/wogg.json"
+        "filter": "./lib/wogg.json"
       }
     },
     {
@@ -131,14 +131,6 @@
       "url": "./lib/iptv.m3u",
       "playerType": 2,
       "timeout": 10
-    },
-    {
-      "name": "mursor",
-      "type": 0,
-      "url": "https://raw.githubusercontent.com/Mursor1985/LIVE/refs/heads/main/iptv.m3u",
-      "playerType": 2,
-      "timeout": 10,
-      "ua": "okHttp/Mod-1.3.0.0"
     }
   ]
 }
