@@ -74,14 +74,14 @@ with open(file_to_update, "r", encoding="utf-8") as file:
                         continue
                     
                     # 定义替换映射：原始字符串 -> 替换后的字符串
-                    # replace_map = {
-                    #     'https://mgtv.ottiptv.cc': 'http://192.168.1.120:8010',
-                    #     'https://mursor.ottiptv.cc': 'http://192.168.1.120:8010'
-                    # }
+                    replace_map = {
+                        'https://mgtv.ottiptv.cc': 'http://192.168.1.120:8010',
+                        'https://live.ottiptv.cc': 'http://192.168.1.120:8010'
+                    }
 
-                    # for old_domain, new_domain in replace_map.items():
-                    #     if old_domain in address:
-                    #         address = address.replace(old_domain, new_domain)   
+                    for old_domain, new_domain in replace_map.items():
+                        if old_domain in address:
+                            address = address.replace(old_domain, new_domain)   
                             
                     updated_lines.append(address + "\n")  # 添加新地址
                 i += 1  # 跳过原地址行
