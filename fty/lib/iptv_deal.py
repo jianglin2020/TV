@@ -68,7 +68,7 @@ with open(file_to_update, "r", encoding="utf-8") as file:
                 updated_lines.append(lines[i])  # 保留频道描述行
                 for address in channel_address_map[normalized_name]:  # 遍历所有新地址
                     # 定义需要过滤的关键词
-                    filter_keywords = ['华数', '222.218.159.235', '110.72.83.148']
+                    filter_keywords = ['华数', '/mg/', '110.72.83.148']
                     # 如果地址包含任意一个过滤词，则跳过
                     if any(keyword in address for keyword in filter_keywords):
                         continue
