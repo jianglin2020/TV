@@ -13,6 +13,7 @@ print(f"当前工作目录切换到：{os.getcwd()}")
 file_to_update = "iptv_dome.m3u"  # 第一个文件路径（需要更新的文件）
 file_with_new_addresses = "mursor.m3u"  # 第二个文件路径（包含新地址的文件）
 output_file = "iptv_update.m3u"  # 输出文件路径
+# merge_file = "iptv_4K.m3u"  # 追加文件路径
 
 # 读取新地址文件并构建频道名称到多个地址的映射
 channel_address_map = {}
@@ -87,8 +88,14 @@ with open(file_to_update, "r", encoding="utf-8") as file:
                 i += 1  # 跳过原地址行
         i += 1
 
+
 # 写入更新后的文件
 with open(output_file, "w", encoding="utf-8") as file:
     file.writelines(updated_lines)
+
+    # 追加新文件内容
+    # with open(merge_file, 'r', encoding='utf-8') as source:
+    #     lines = source.readlines()
+    #     file.writelines(lines[1:])  # 从第二行开始
 
 print(f"地址更新完成，结果已保存到 {output_file}")
