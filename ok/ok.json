@@ -1,5 +1,5 @@
 {
-  "spider": "./Rk80Tm-B.png;md5;db9e24529dc557e87f378d8da73146cf",
+  "spider": "./oo.png;md5;5d46478771c6f68bea88837b5cc3251e",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=wall",
   "logo": "./lib/ol.txt",
   "sites": [
@@ -38,6 +38,16 @@
       "timeout": 5
     },
     {
+      "key": "二小",
+      "name": "🦢二小┃4K",
+      "type": 3,
+      "api": "csp_ErXiaoGuard",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 25
+    },
+    {
       "key": "双星",
       "name": "🤩双星┃4K",
       "type": 3,
@@ -59,16 +69,6 @@
       "filterable": 1,
       "changeable": 1,
       "timeout": 30
-    },
-    {
-      "key": "二小",
-      "name": "🦢二小┃4K",
-      "type": 3,
-      "api": "csp_ErXiaoGuard",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 25
     },
     {
       "key": "立播版",
@@ -111,10 +111,10 @@
       "timeout": 25
     },
     {
-      "key": "百家",
-      "name": "💒百家┃4K",
+      "key": "小飒",
+      "name": "💒小飒┃4K",
       "type": 3,
-      "api": "csp_BaijiaGuard",
+      "api": "csp_XsayangGuard",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
@@ -125,16 +125,6 @@
       "name": "💌至臻┃4K",
       "type": 3,
       "api": "csp_ZhiZhenGuard",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 25
-    },
-    {
-      "key": "闪电",
-      "name": "🌈闪电┃4K",
-      "type": 3,
-      "api": "csp_ShanDianGuard",
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
@@ -174,23 +164,13 @@
       "timeout": 25
     },
     {
-      "key": "校长",
-      "name": "💮小章┃4K",
-      "type": 3,
-      "api": "csp_XiaoZhangGuard",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "timeout": 30
-    },
-    {
       "key": "光影",
       "name": "🎥光影┃4K",
       "type": 3,
       "api": "csp_GuanyingGuard",
       "searchable": 1,
       "filterable": 1,
-      "changeable": 1,
+      "changeable": 0,
       "timeout": 30
     },
     {
@@ -314,16 +294,6 @@
       "name": "🍎苹果┃直连",
       "type": 3,
       "api": "csp_XpgGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "timeout": 10
-    },
-    {
-      "key": "加菲",
-      "name": "🐱加菲┃App",
-      "type": 3,
-      "api": "csp_JiaFeiGuard",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -526,6 +496,26 @@
       "timeout": 10
     },
     {
+      "key": "电影天堂",
+      "name": "🎞️天堂┃采集",
+      "type": 1,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
+      "key": "锦鲤短剧",
+      "name": "🐟锦鲤┃短剧",
+      "type": 3,
+      "api": "csp_JinliGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
       "key": "星芽短剧",
       "name": "💖星芽┃短剧",
       "type": 3,
@@ -593,6 +583,16 @@
       "searchable": 1,
       "changeable": 0,
       "timeout": 20
+    },
+    {
+      "key": "聚合直播",
+      "name": "📽️聚合┃直播",
+      "type": 3,
+      "api": "csp_LivingGuard",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "timeout": 10
     },
     {
       "key": "快手直播",
@@ -1021,17 +1021,17 @@
     {
       "name": "AI直播",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/iptv.m3u",
-      "playerType": 2,
-      "timeout": 10,
-      "ua": "okHttp/Mod-1.3.0.0"
-    },
-    {
-      "name": "范明明",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/tv/m3u/ipv6.m3u",
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
       "playerType": 2,
       "timeout": 10
+    },
+    {
+      "name": "MIGU",
+      "type": 0,
+      "url": "http://127.0.0.1:9978/proxy?do=live&url=https%3A%2F%2Ffy.188766.xyz%2F%3Fip%3D%26mishitong%3Dtrue%26mima%3Dmianfeidehaimaiqian%26json%3Dtrue",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "bingcha/1.1"
     },
     {
       "name": "电视Live",
@@ -1062,7 +1062,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/huyayqk.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.3.0.0"
+      "ua": "okHttp/Mod-1.4.0.0"
     },
     {
       "name": "肥羊B站直播",
@@ -1070,7 +1070,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/bililive.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.3.0.0"
+      "ua": "okHttp/Mod-1.4.0.0"
     },
     {
       "name": "肥羊斗鱼一起看",
@@ -1078,7 +1078,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/douyuyqk.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.3.0.0"
+      "ua": "okHttp/Mod-1.4.0.0"
     },
     {
       "name": "肥羊YY轮播",
@@ -1086,7 +1086,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/yylunbo.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.3.0.0"
+      "ua": "okHttp/Mod-1.4.0.0"
     }
   ],
   "ijk": [
