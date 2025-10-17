@@ -66,25 +66,32 @@ with open(file_to_update, "r", encoding="utf-8") as file:
 
             # 如果该频道有新地址，替换原地址
             if normalized_name in channel_address_map:
-                updated_lines.append(lines[i])  # 保留频道描述行
+                # 先收集所有有效的新地址
+                valid_addresses = []
                 for address in channel_address_map[normalized_name]:  # 遍历所有新地址
                     # 定义需要过滤的关键词
-                    filter_keywords = ['华数', '/mg/', '110.72.83.148']
+                    filter_keywords = ['/mg/', '/mst/']
                     # 如果地址包含任意一个过滤词，则跳过
                     if any(keyword in address for keyword in filter_keywords):
                         continue
                     
                     # 定义替换映射：原始字符串 -> 替换后的字符串
-                    replace_map = {
-                        'https://mgtv.ottiptv.cc': 'http://192.168.1.120:8010',
-                        'https://live.ottiptv.cc': 'http://192.168.1.120:8010'
-                    }
+                    # replace_map = {
+                    #     'https://mursor.ottiptv.cc': 'http://192.168.1.120:8010',
+                    #     'https://live.ottiptv.cc': 'http://192.168.1.120:8010'
+                    # }
 
-                    for old_domain, new_domain in replace_map.items():
-                        if old_domain in address:
-                            address = address.replace(old_domain, new_domain)   
+                    # for old_domain, new_domain in replace_map.items():
+                    #     if old_domain in address:
+                    #         address = address.replace(old_domain, new_domain)
                             
-                    updated_lines.append(address + "\n")  # 添加新地址
+                    valid_addresses.append(address + "\n")
+                
+                # 只有在有有效地址时才添加频道描述行和地址
+                if valid_addresses:
+                    updated_lines.append(lines[i])  # 保留频道描述行
+                    updated_lines.extend(valid_addresses)  # 添加所有有效的新地址
+                
                 i += 1  # 跳过原地址行
         i += 1
 
