@@ -78,7 +78,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "timeout": 10,
-      "jar": "./lib/oo.png;md5;5d46478771c6f68bea88837b5cc3251e"
+      "jar": "./lib/o.png;md5;96ea607f1b90569eca89b2ea28de0db2"
     },
     {
       "key": "热播",
@@ -92,7 +92,7 @@
         "site": 0
       },
       "timeout": 10,
-      "jar": "./lib/oo.png;md5;5d46478771c6f68bea88837b5cc3251e"
+      "jar": "./lib/o.png;md5;96ea607f1b90569eca89b2ea28de0db2"
     },
     {
       "key": "TgYunPan",
