@@ -1,0 +1,148 @@
+{
+  "spider": "./lib/custom_spider.jar;md5;43989964965deab2a4b6b48251043412",
+  "wallpaper": "https://深色壁纸.xxooo.cf/",
+  "sites": [
+    {
+      "key": "豆豆",
+      "name": "🅱豆瓣┃推荐",
+      "type": 3,
+      "api": "csp_TgYunDouBanPan",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "siteUrl": "",
+        "count": 4,
+        "channelUsername": "",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json",
+        "filter": "./lib/douban.json"
+      }
+    },
+    {
+      "key": "py_test",
+      "name": "🦋我的┃AList",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=test",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "py_test2",
+      "name": "🦋本地┃AList2",
+      "type": 4,
+      "api": "http://192.168.1.230:5700/spider?site=test",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "玩偶",
+      "name": "👽玩偶┃在线",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json",
+        "siteUrl": "https://wogg.xxooo.cf",
+        "filter": "./lib/wogg.json"
+      }
+    },
+    {
+      "key": "夸克至臻",
+      "name": "💌至臻┃在线",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json",
+        "siteUrl": "https://mihdr.top",
+        "filter": "./lib/wogg.json"
+      }
+    },
+    {
+      "key": "蜡笔",
+      "name": "👠蜡笔┃在线",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json",
+        "siteUrl": "https://feimao666.fun",
+        "filter": "./lib/wogg.json"
+      }
+    },
+    {
+      "key": "瓜子",
+      "name": "🍉瓜子┃App",
+      "type": 3,
+      "api": "csp_GuaziGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 10,
+      "jar": "./lib/D-i1QEtC.png;md5;a23597945658123f7fd45848c6d5bba1"
+    },
+    {
+      "key": "热播",
+      "name": "📺热播┃App",
+      "type": 3,
+      "api": "csp_TianTianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "site": 0
+      },
+      "timeout": 10,
+      "jar": "./lib/D-i1QEtC.png;md5;a23597945658123f7fd45848c6d5bba1"
+    },
+    {
+      "key": "TgYunPan",
+      "name": "🐰电报┃天翼",
+      "type": 3,
+      "api": "csp_TgYunPanLocal",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "count": 4,
+        "channelUsername": "tianyirigeng",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
+      }
+    },
+    {
+      "key": "小雷",
+      "name": "🐶雷鲸┃天翼",
+      "type": 3,
+      "api": "csp_PanTa",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "siteUrl": "https://www.leijing1.com/",
+        "cookie": "JSESSIONID=1567415446214C9674B87F1652BC2BD2; cms_accessToken=dc827bf934a94fe7934f19fdd0db6ae5; cms_refreshToken=52e6baa0e928412d9bb15d97a2a828e5",
+        "commonConfig": "http://127.0.0.1:9978/file/TV/peizhi.json"
+      }
+    }
+  ],
+  "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
+  "lives": [
+    {
+      "name": "iptv",
+      "type": 0,
+      "url": "./lib/iptv2.m3u",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "okHttp/Mod-1.4.0.0"
+    }
+  ]
+}
