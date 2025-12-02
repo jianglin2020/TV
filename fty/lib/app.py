@@ -12,11 +12,13 @@ HEADERS = {
   'Content-Type': 'application/json;'
 }
 
+HOST_API = 'http://192.168.1.120:8040'
+
 def openlist_login():
     data = {
       "username":"guan","password":"1ba5064eeecf855752b8678f3d3de0926f2adc11e8c3139a944b274c8b52c619","otp_code":""
     }
-    res = requests.post('http://192.168.1.120:8040/api/auth/login/hash', data=json.dumps(data), headers={'Content-Type': 'application/json'})
+    res = requests.post(f'{HOST_API}/api/auth/login/hash', data=json.dumps(data), headers={'Content-Type': 'application/json'})
 
     res = res.json()
     data = res.get('data', {})
@@ -25,17 +27,17 @@ def openlist_login():
 
 def openlist_list(path, page):
     print(path, 'path')
-    res =  requests.post('http://192.168.1.120:8040/api/fs/list', data = json.dumps({"path": path,"password":"", 'page': page}), headers=HEADERS)
+    res =  requests.post(f'{HOST_API}/api/fs/list', data = json.dumps({"path": path,"password":"", 'page': page}), headers=HEADERS)
     res = res.json()
     return res.get('data', {})
 
 def openlist_get(path):
-    res =  requests.post('http://192.168.1.120:8040/api/fs/get', data = json.dumps({"path": path,"password":""}), headers=HEADERS)
+    res =  requests.post(f'{HOST_API}/api/fs/get', data = json.dumps({"path": path,"password":""}), headers=HEADERS)
     res = res.json()
     return res.get('data', {}) 
 
 def openlist_search(keywords):
-    res =  requests.post('http://192.168.1.120:8040/api/fs/search', data=json.dumps({
+    res =  requests.post(f'{HOST_API}/api/fs/search', data=json.dumps({
     "parent":"/","keywords": keywords,"scope":0,"page":1,"per_page":100,"password":""}), headers=HEADERS)
     res = res.json()
 
@@ -44,6 +46,27 @@ def openlist_search(keywords):
 # 首页
 def home():
     # /spider?site=test&filter=true
+    title_list = [
+      { 'parent': '/天翼/临时文件' , 'name': '凡人修仙传 (2020)'},
+      { 'parent': '/天翼/临时文件' , 'name': '大生意人'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发 第三季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论 第三季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧 天路篇'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '声生不息 华流季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '喜人奇妙夜 第二季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '向往的生活 第八季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '你好星期六 2025'},
+    ]
+
+    list = []
+
+    for item in title_list:
+      list.append({
+          'vod_id': f"{item['parent']}/{item['name']}",
+          'vod_name': item['name'], 
+          'vod_pic': f"http://192.168.1.120:8010/images/{item['name']}.jpg", 'vod_remarks': ''
+      })
+      
     return {
       "class": [
         {
@@ -64,43 +87,7 @@ def home():
         }
       ],
       "filters": {},
-      "list": [
-        {
-          'vod_id': '/天翼/临时文件/凡人修仙传 (2020)',
-          'vod_name': '凡人修仙传 (2020)', 
-          'vod_pic': 'http://192.168.1.120:8010/images/凡人修仙传 (2020).jpg', 'vod_remarks': ''
-        },
-        { 
-          'vod_id': '/天翼/临时文件/大生意人',
-          'vod_name': '大生意人',
-          'vod_pic': 'http://192.168.1.120:8010/images/大生意人.jpg',
-          'vod_remarks': ''
-        },
-        { 
-          'vod_id': '/天翼/nas/综艺/现在就出发 第三季',
-          'vod_name': '现在就出发 第三季',
-          'vod_pic': 'http://192.168.1.120:8010/images/现在就出发 第三季.jpg',
-          'vod_remarks': ''
-        },
-        { 
-          'vod_id': '/天翼/nas/综艺/森林进化论 第三季',
-          'vod_name': '森林进化论 第三季',
-          'vod_pic': 'http://192.168.1.120:8010/images/森林进化论 第三季.jpg',
-          'vod_remarks': ''
-        },
-        { 
-          'vod_id': '/天翼/nas/综艺/奔跑吧 天路篇',
-          'vod_name': '奔跑吧 天路篇',
-          'vod_pic': 'http://192.168.1.120:8010/images/奔跑吧 天路篇.jpg',
-          'vod_remarks': ''
-        },
-        { 
-          'vod_id': '/天翼/nas/综艺/声生不息 华流季',
-          'vod_name': '声生不息 华流季',
-          'vod_pic': 'http://192.168.1.120:8010/images/声生不息 华流季.jpg',
-          'vod_remarks': ''
-        }
-      ],
+      "list": list,
       "parse": 0,
       "jx": 0
     }
@@ -184,58 +171,44 @@ def detail(ids):
         ]
         all_content.append({
             'content': content,
-            'play_from': '电影',
+            'play_from': 'alist',
             'ids': ids,
         })
 
     else: # 电视剧、综艺
-        # print(ids, '11111')
         data = openlist_list(ids, 1)
         vod_name = ids.split('/')[-1]
 
-        print(data['content'])
-
         # 多层结构
         if data['content'] and data['content'][0]['is_dir']:
-            if len(data['content']) == 1:
-              print('单线路')
-              item = data['content'][0]
-              ids = f"{ids}/{item['name']}"
-              data = openlist_list(ids, 1)
-
-              all_content.append({
-                'content': data['content'],
-                'play_from': '单线路',
-                'ids': ids,
-              })
-            else: # 多线路
-              print('多线路')
-              for item in data['content']:
-                  play_list = []
-                  newIds = f"{ids}/{item['name']}"
-                  data = openlist_list(newIds, 1)
-                  all_content.append({
-                    'content': data['content'],
-                    'play_from': item['name'],
-                    'ids': newIds
-                  })
+            print('多线路')
+            for item in data['content']:
+                play_list = []
+                newIds = f"{ids}/{item['name']}"
+                data = openlist_list(newIds, 1)
+                all_content.append({
+                  'content': data['content'],
+                  'play_from': item['name'],
+                  'ids': newIds
+                })
         # 单层结构          
         else:  
             all_content.append({
               'content': data['content'],
-              'play_from': '测试',
+              'play_from': 'alist',
               'ids': ids,
             })
-            
 
     all_play_list = []
     all_from_list = []
+
     for all_item in all_content:
-        play_list = []
         ids = all_item['ids']
-        for it in all_item['content']:
-            print(f"{it['name']}${all_item['ids']}/{it['name']}")
-            play_list.append(f"{it['name']}${all_item['ids']}/{it['name']}")
+        # 使用列表推导式优化内部循环
+        play_list = [
+            f"{it['name']}${ids}/{it['name']}" 
+            for it in all_item['content']
+        ]
         all_play_list.append('#'.join(play_list))
         all_from_list.append(all_item['play_from'])
 
