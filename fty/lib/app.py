@@ -237,6 +237,7 @@ def detail(ids):
 def play_detail(play):
 
   data = openlist_get(play)
+  print(f"播放url {data['raw_url']}")
 
   return {
     "url": data['raw_url'],
@@ -255,7 +256,6 @@ def search(wd):
 
     list = []
     for item in data['content']:
-      print(item, '=======================')
       if item['parent'] in {'/天翼/nas/综艺', '/天翼/nas/电视剧'}:
           list.append({
             "vod_id": f"{item['parent']}/{item['name']}",
@@ -263,8 +263,7 @@ def search(wd):
             "vod_pic": f"http://192.168.1.120:8010/images/{item['name']}.jpg",
             "vod_remarks": ""
           })
-      else:
-          if item['parent'] in {'/天翼/nas/电影'}:
+      elif item['parent'] in {'/天翼/nas/电影'}:
             name = item['name'].split('.')[-2]
             list.append({
               "vod_id": f"{item['parent']}/{name}",
