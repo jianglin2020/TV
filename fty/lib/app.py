@@ -1,18 +1,21 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, url_for
 import requests
 import json
 import os
 from datetime import datetime
 
-
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_folder='static',      # 静态文件目录（相对或绝对路径）
+    static_url_path='/static'    # 访问URL前缀
+)
 
 HEADERS = {
   'Authorization': '',
   'Content-Type': 'application/json;'
 }
 
-HOST_API = 'http://192.168.1.120:8040'
+HOST_API = os.environ.get('HOST_API', 'http://192.168.1.120:8040')
 
 def openlist_login():
     data = {
@@ -43,6 +46,9 @@ def openlist_search(keywords):
 
     return res.get('data', {})  
 
+def static_url(filename):
+    return url_for('static', filename=filename, _external=True)
+
 # 首页
 def home():
     # /spider?site=test&filter=true
@@ -64,7 +70,8 @@ def home():
       list.append({
           'vod_id': f"{item['parent']}/{item['name']}",
           'vod_name': item['name'], 
-          'vod_pic': f"http://192.168.1.120:8010/images/{item['name']}.jpg", 'vod_remarks': ''
+          'vod_pic': static_url(f"images/{item['name']}.jpg"),
+          'vod_remarks': ''
       })
       
     return {
@@ -129,14 +136,14 @@ def list_page(t, page):
       list_item = {
         "vod_id": f"{t}/{name}",
         "vod_name": name,
-        "vod_pic": f"http://192.168.1.120:8010/images/{name}.jpg",
+        'vod_pic': static_url(f"images/{name}.jpg"),
         "vod_remarks": ""
       }
 
       # 根据类型添加额外字段
       if type in {'其它'}:
           list_item.update({
-              "vod_pic": f"http://192.168.1.120:8010/images/maoww/{name}.jpg",
+              'vod_pic': static_url(f"images/maoww/{name}.jpg"),
               "style": {
                   "type": "rect",
                   "ratio": 1.5
@@ -260,7 +267,7 @@ def search(wd):
           list.append({
             "vod_id": f"{item['parent']}/{item['name']}",
             "vod_name": item['name'],
-            "vod_pic": f"http://192.168.1.120:8010/images/{item['name']}.jpg",
+             'vod_pic': static_url(f"images/{item['name']}.jpg"),
             "vod_remarks": ""
           })
       elif item['parent'] in {'/天翼/nas/电影'}:
@@ -268,7 +275,7 @@ def search(wd):
             list.append({
               "vod_id": f"{item['parent']}/{name}",
               "vod_name": name,
-              "vod_pic": f"http://192.168.1.120:8010/images/{name}.jpg",
+              'vod_pic': static_url(f"images/{name}.jpg"),
               "vod_remarks": ""
             })
 
