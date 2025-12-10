@@ -28,11 +28,32 @@ def openlist_login():
     print(res)
     HEADERS["Authorization"] = data['token']
 
-def openlist_list(path, page):
+def openlist_list(path, page, max_retries=3):
+    """获取列表数据，授权失败时自动重试登录"""
     print(path, 'path')
-    res =  requests.post(f'{HOST_API}/api/fs/list', data = json.dumps({"path": path,"password":"", 'page': page}), headers=HEADERS)
-    res = res.json()
-    return res.get('data', {})
+    
+    for attempt in range(max_retries):
+        res = requests.post(
+            f'{HOST_API}/api/fs/list',
+            data=json.dumps({"path": path, "password": "", 'page': page}),
+            headers=HEADERS,
+            timeout=10
+        )
+        res_data = res.json()
+        
+        if res_data['code'] == 401:
+            if attempt < max_retries - 1:
+                print(f"授权失败，尝试重新登录 (第{attempt + 1}次重试)")
+                openlist_login()  # 重新登录
+                continue  # 重新尝试请求
+            else:
+                raise Exception(f"授权失败，已达最大重试次数{max_retries}")
+        
+        # 成功获取数据
+        return res_data.get('data', {})
+    
+    # 理论上不会执行到这里，但为了安全返回空字典
+    return {}
 
 def openlist_get(path):
     res =  requests.post(f'{HOST_API}/api/fs/get', data = json.dumps({"path": path,"password":""}), headers=HEADERS)
@@ -89,7 +110,7 @@ def home():
           "type_name": "电影"
         },
         {
-          "type_id": "/其它",
+          "type_id": "/aaa",
           "type_name": "其它"
         }
       ],

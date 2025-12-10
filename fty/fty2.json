@@ -14,7 +14,7 @@
       "key": "py_test",
       "name": "🦋我的┃AList",
       "type": 4,
-      "api": "http://192.168.1.120:5700/spider?site=test",
+      "api": "http://82.156.222.71:5700/spider?site=test",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -57,7 +57,7 @@
       "timeout": 10
     }
   ],
-  "logo": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1716545739254/fc1b89e152cd4aa28d295107cb6c56c9.gif",
+  "logo": "./lib/logo.gif",
   "lives": [
     {
       "name": "iptv",
