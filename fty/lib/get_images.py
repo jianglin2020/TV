@@ -112,7 +112,7 @@ def quark_link(name):
 
 
 if __name__ == '__main__':
-    list = ['双轨']
+    list = ['龙马精神']
 
     for item in list:
         quark_link(item)

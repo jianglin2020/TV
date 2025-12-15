@@ -3,6 +3,7 @@ import requests
 import json
 import os
 from datetime import datetime
+from lxml import html as lxml_html
 
 app = Flask(
     __name__,
@@ -70,15 +71,62 @@ def openlist_search(keywords):
 def static_url(filename):
     return url_for('static', filename=filename, _external=True)
 
+def extract_a_links(soup):
+    """提取搜索结果的链接和标题"""
+    links = []
+
+    # 定位到目标img标签
+    for img in soup.xpath("//*[contains(@class, 'module-item-pic')]//img"):
+        title = img.get("alt", "").strip()
+        image = img.get('data-src') or img.get('src')
+        if image:
+            links.append({
+                'title': title if title else "无标题",
+                'images': image
+            })
+    return links
+
+def save_img(item, title):
+    if not os.path.exists('./static/images'):
+        os.makedirs('./static/images')
+    try:
+        print(f"{item['images']}")
+        res = requests.get(url=item['images'], headers={'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'})
+
+        with open(f"./static/images/{title}.jpg", 'wb') as f:
+            f.write(res.content)
+    except Exception as e:
+        print(e, "图片下载失败")
+
+
+def quark_img(name):
+    SEARCH_KEYWORD = name
+    TARGET_SITES = [
+        # {'name': '至臻', 'url': 'https://xiaomi666.fun'},
+        {'name': '蜡笔', 'url': 'https://feimao666.fun'},
+    ]
+    for site in TARGET_SITES:
+        try:
+            search_url = (f"{site['url']}/index.php/vod/search.html?wd={SEARCH_KEYWORD}")
+            
+            print(f"正在抓取 {site['name']}: {search_url}")
+            response = requests.get(search_url, headers=HEADERS, timeout=15)
+            soup = lxml_html.fromstring(response.text)
+
+            for item in extract_a_links(soup)[:1]:
+                save_img(item, SEARCH_KEYWORD)
+        except Exception as e:
+          print(f"抓取 {site['name']} 失败: {e}")
+
 # 首页
 def home():
     # /spider?site=test&filter=true
     title_list = [
       { 'parent': '/天翼/临时文件' , 'name': '凡人修仙传 (2020)'},
       { 'parent': '/天翼/临时文件' , 'name': '狙击蝴蝶'},
-      { 'parent': '/天翼/临时文件' , 'name': '风与潮'},
       { 'parent': '/天翼/临时文件' , 'name': '长安二十四计'},
       { 'parent': '/天翼/临时文件' , 'name': '双轨'},
+      { 'parent': '/天翼/临时文件' , 'name': '老舅'},
       { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧 天路篇'},
@@ -91,6 +139,10 @@ def home():
     list = []
 
     for item in title_list:
+      # 判断有没有海报，没有下载
+      file_path = f"./static/images/{item['name']}.jpg"
+      if not os.path.exists(file_path):
+          quark_img(item['name'])
       list.append({
           'vod_id': f"{item['parent']}/{item['name']}",
           'vod_name': item['name'], 
@@ -157,6 +209,11 @@ def list_page(t, page):
       else:
           name = item['name']
 
+      # 判断有没有海报，没有下载
+      file_path = f"./static/images/{name}.jpg"
+      if not os.path.exists(file_path):
+          quark_img(name)
+          
       list_item = {
         "vod_id": f"{t}/{name}",
         "vod_name": name,

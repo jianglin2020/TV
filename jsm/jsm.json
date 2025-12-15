@@ -1,6 +1,15 @@
 {
-  "spider": "./pg.jar",
   "sites": [
+    {
+      "key": "py_maomt",
+      "name": "Maomt(T4)",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=maomt",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
     {
       "key": "py_Miss",
       "name": "MissAV(T4)",
@@ -40,18 +49,14 @@
       }
     },
     {
-      "key": "csp_AList",
-      "name": "AList",
-      "type": 3,
-      "api": "csp_AList",
+      "key": "py_alist",
+      "name": "Alist(T4)",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=alist",
       "searchable": 1,
+      "quickSearch": 1,
       "filterable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "list"
-      },
-      "ext": "file://TV/alist2.json",
-      "timeout": 15
+      "changeable": 0
     }
   ]
 }
