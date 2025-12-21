@@ -132,7 +132,6 @@ def home():
       { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧 天路篇'},
       { 'parent': '/天翼/nas/综艺' , 'name': '声生不息 华流季'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '向往的生活 第八季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '你好星期六 2025'},
     ]
 
@@ -165,7 +164,7 @@ def home():
           "type_name": "电影"
         },
         {
-          "type_id": "/aaa",
+          "type_id": "/天翼/nas/其它",
           "type_name": "其它"
         }
       ],
@@ -191,29 +190,25 @@ def list_page(t, page):
     else:
         content = []
 
-    # content = data['content'] or []
-    # print(content, 'content')
-
     # 按时间排序（从晚到早）
     # sorted_items = sorted(content, key=lambda x: datetime.fromisoformat(x["modified"]), reverse=True)
-    sorted_items = sorted(content, key=lambda x: 
-        datetime.fromisoformat(x["modified"][:19]), 
-        reverse=True
-    )
+    
+    if type in {'其它'}:
+      sorted_items = [item for item in content if item.get('name') in ['小品', '健身', '音乐视频']]
+    else:  
+      sorted_items = sorted(content, key=lambda x: 
+          datetime.fromisoformat(x["modified"][:19]), 
+          reverse=True
+      )
 
     for item in sorted_items:
       # print(f"http://192.168.1.120:8010/images/{item['name']}.jpg")
       # 电影特殊处理
-      if type in {'电影', '其它'}:
+      if type in {'电影'}:
           name = item['name'].split('.')[-2]
       else:
           name = item['name']
 
-      # 判断有没有海报，没有下载
-      file_path = f"./static/images/{name}.jpg"
-      if not os.path.exists(file_path):
-          quark_img(name)
-          
       list_item = {
         "vod_id": f"{t}/{name}",
         "vod_name": name,
@@ -221,15 +216,12 @@ def list_page(t, page):
         "vod_remarks": ""
       }
 
-      # 根据类型添加额外字段
-      if type in {'其它'}:
-          list_item.update({
-              'vod_pic': static_url(f"images/maoww/{name}.jpg"),
-              "style": {
-                  "type": "rect",
-                  "ratio": 1.5
-              }
-          })
+      if not type in {'其它'}:
+        # 判断有没有海报，没有下载
+        file_path = f"./static/images/{name}.jpg"
+        if not os.path.exists(file_path):
+            quark_img(name) 
+
       list.append(list_item)
       title_list.append(name)
 
@@ -247,7 +239,7 @@ def detail(ids):
     print(ids)
     type = ids.split('/')[-2]
     all_content = []
-    if type in {'电影', '其它'}:
+    if type in {'电影'}:
         vod_name = ids.split('/')[-1]
         ids = os.path.dirname(ids)
         data = openlist_list(ids, 1)
@@ -263,7 +255,7 @@ def detail(ids):
             'ids': ids,
         })
 
-    else: # 电视剧、综艺
+    else: # 电视剧、综艺、其它
         data = openlist_list(ids, 1)
         vod_name = ids.split('/')[-1]
 
