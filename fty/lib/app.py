@@ -123,11 +123,11 @@ def home():
     # /spider?site=test&filter=true
     title_list = [
       { 'parent': '/天翼/临时文件' , 'name': '凡人修仙传 (2020)'},
-      { 'parent': '/天翼/临时文件' , 'name': '风与潮'},
-      { 'parent': '/天翼/临时文件' , 'name': '长安二十四计'},
-      { 'parent': '/天翼/临时文件' , 'name': '双轨'},
-      { 'parent': '/天翼/临时文件' , 'name': '老舅'},
       { 'parent': '/天翼/临时文件' , 'name': '唐诡奇谭'},
+      { 'parent': '/天翼/临时文件' , 'name': '反人类暴行'},
+      { 'parent': '/天翼/临时文件' , 'name': '骄阳似我'},
+      { 'parent': '/天翼/临时文件' , 'name': '人之初'},
+      { 'parent': '/天翼/临时文件' , 'name': '剥茧'},
       { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧 天路篇'},

@@ -9,9 +9,15 @@ def download_m3u(url, save_path=None):
     url (str): M3U文件的URL
     save_path (str/Path): 可选，自定义保存路径
     """
+
+    headers = {
+        'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
+        'Host': 'live.ottiptv.cc'
+    }
+
     try:
         # 发送HTTP GET请求
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=headers, timeout=20)
         response.raise_for_status()  # 检查请求是否成功
         
         # 设置默认保存路径（当前目录）
