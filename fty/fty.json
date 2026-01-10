@@ -11,6 +11,16 @@
       "changeable": 1
     },
     {
+      "key": "py_test",
+      "name": "🦋我的┃AList",
+      "type": 4,
+      "api": "http://82.156.222.71:5700/spider?site=test",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
       "key": "瓜子",
       "name": "🍉瓜子┃App",
       "type": 3,

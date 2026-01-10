@@ -122,12 +122,12 @@ def quark_img(name):
 def home():
     # /spider?site=test&filter=true
     title_list = [
-      { 'parent': '/天翼/临时文件' , 'name': '凡人修仙传 (2020)'},
-      { 'parent': '/天翼/临时文件' , 'name': '唐诡奇谭'},
-      { 'parent': '/天翼/临时文件' , 'name': '反人类暴行'},
-      { 'parent': '/天翼/临时文件' , 'name': '骄阳似我'},
+      { 'parent': '/天翼/临时文件' , 'name': '剑来'},
+      { 'parent': '/天翼/临时文件' , 'name': '中国奇谭 第二季'},
       { 'parent': '/天翼/临时文件' , 'name': '人之初'},
       { 'parent': '/天翼/临时文件' , 'name': '剥茧'},
+      { 'parent': '/天翼/临时文件' , 'name': '玉茗茶骨'},
+      { 'parent': '/天翼/临时文件' , 'name': '轧戏'},
       { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论 第三季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧 天路篇'},
