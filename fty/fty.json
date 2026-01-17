@@ -14,7 +14,7 @@
       "key": "py_test",
       "name": "🦋我的┃AList",
       "type": 4,
-      "api": "http://82.156.222.71:5700/spider?site=test",
+      "api": "http://101.42.13.92:5700/spider?site=test",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
