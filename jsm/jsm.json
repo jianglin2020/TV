@@ -11,6 +11,17 @@
       "changeable": 0
     },
     {
+      "key": "py_guazi",
+      "name": "Guazi(T4)",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=guazi",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 10
+    },
+    {
       "key": "py_Miss",
       "name": "MissAV(T4)",
       "type": 4,
