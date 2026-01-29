@@ -41,7 +41,7 @@
       "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
+      "changeable": 1,
       "filterable": 1,
       "ext": {
         "sp": "TianTian",
@@ -53,41 +53,17 @@
       "key": "糯米",
       "name": "🍓糯米┃秒播",
       "type": 3,
-      "api": "csp_AweSomeGuard",
+      "api": "./lib/nmys.py",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "Nmys"
-      },
-      "timeout": 10
+      "changeable": 1,
+      "filterable": 1
     },
     {
       "key": "py_小苹果",
       "name": "🍎苹果┃直连",
       "type": 4,
       "api": "https://py.doube.eu.org/v2/spider?site=9037cfae7c64405111e0e364401adb60",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "py_官方采集789",
-      "name": "🦄采集┃直连",
-      "type": 4,
-      "api": "https://py.doube.eu.org/v2/spider?site=006849a2c19a6be413be5017be468c63",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
-    },
-    {
-      "key": "py_欧乐影院",
-      "name": "😘欧乐┃直连",
-      "type": 4,
-      "api": "https://py.doube.eu.org/v2/spider?site=8a0bbe9e97c4429a517cd2ece3f6772b",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
