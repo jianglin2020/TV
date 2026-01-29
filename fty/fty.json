@@ -1,5 +1,5 @@
 {
-  "spider": "./lib/ok.jpg;md5;eff2819b1a4dd3c22c17cad6ad645f57",
+  "spider": "./lib/ok.jpg;md5;127ea82cb8bf8a82f0cf64da66e39b60",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "sites": [
     {
@@ -24,23 +24,27 @@
       "key": "瓜子",
       "name": "🍉瓜子┃App",
       "type": 3,
-      "api": "csp_GuaziGuard",
+      "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1,
+      "ext": {
+        "sp": "Guazi"
+      },
       "timeout": 10
     },
     {
       "key": "热播",
       "name": "📺热播┃App",
       "type": 3,
-      "api": "csp_TianTianGuard",
+      "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
+      "changeable": 0,
       "filterable": 1,
       "ext": {
+        "sp": "TianTian",
         "site": 0
       },
       "timeout": 10
@@ -49,18 +53,51 @@
       "key": "糯米",
       "name": "🍓糯米┃秒播",
       "type": 3,
-      "api": "csp_NmysGuard",
+      "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
+      "changeable": 0,
       "filterable": 1,
+      "ext": {
+        "sp": "Nmys"
+      },
       "timeout": 10
+    },
+    {
+      "key": "py_小苹果",
+      "name": "🍎苹果┃直连",
+      "type": 4,
+      "api": "https://py.doube.eu.org/v2/spider?site=9037cfae7c64405111e0e364401adb60",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_官方采集789",
+      "name": "🦄采集┃直连",
+      "type": 4,
+      "api": "https://py.doube.eu.org/v2/spider?site=006849a2c19a6be413be5017be468c63",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "py_欧乐影院",
+      "name": "😘欧乐┃直连",
+      "type": 4,
+      "api": "https://py.doube.eu.org/v2/spider?site=8a0bbe9e97c4429a517cd2ece3f6772b",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
     },
     {
       "key": "非凡",
       "name": "⛅️非凡┃无广",
       "type": 3,
-      "api": "./lib/去广告.py",
+      "api": "./lib/adBlock.py",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
@@ -68,20 +105,6 @@
       "ext": {
         "url":"http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/",
         "a":[1, 2, 3, 34]
-      }
-    },
-    {
-      "key": "天堂",
-      "name": "😘天堂┃无广",
-      "type": 3,
-      "api": "./lib/去广告.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "url":"http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/",
-        "a":[1, 2, 3, 4, 5, 33, 34]
       }
     }
   ],
