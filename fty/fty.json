@@ -6,7 +6,7 @@
       "key": "豆豆",
       "name": "🅱豆瓣┃推荐",
       "type": 3,
-      "api": "csp_DoubanGuard",
+      "api": "./lib/home.py",
       "searchable": 0,
       "changeable": 1
     },
@@ -18,7 +18,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "changeable": 0
+      "changeable": 1
     },
     {
       "key": "瓜子",
@@ -55,6 +55,34 @@
       "changeable": 1,
       "filterable": 1,
       "timeout": 10
+    },
+    {
+      "key": "非凡",
+      "name": "⛅️非凡┃无广",
+      "type": 3,
+      "api": "./lib/去广告.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "url":"http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/",
+        "a":[1, 2, 3, 34]
+      }
+    },
+    {
+      "key": "天堂",
+      "name": "😘天堂┃无广",
+      "type": 3,
+      "api": "./lib/去广告.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "url":"http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/",
+        "a":[1, 2, 3, 4, 5, 33, 34]
+      }
     }
   ],
   "logo": "./lib/logo.gif",

@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, url_for
+from flask import Flask, Response, request, jsonify, url_for
 import requests
 import json
 import os
@@ -123,17 +123,17 @@ def home():
     # /spider?site=test&filter=true
     title_list = [
       { 'parent': '/天翼/临时文件' , 'name': '剑来'},
-      { 'parent': '/天翼/临时文件' , 'name': '中国奇谭 第二季'},
+      { 'parent': '/天翼/临时文件' , 'name': '中国奇谭第二季'},
       { 'parent': '/天翼/临时文件' , 'name': '轧戏'},
       { 'parent': '/天翼/临时文件' , 'name': '小城大事'},
-      { 'parent': '/天翼/临时文件' , 'name': '御赐小仵作'},
+      { 'parent': '/天翼/临时文件' , 'name': '御赐小仵作第二季'},
       { 'parent': '/天翼/临时文件' , 'name': '太平年'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发 第三季'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论 第三季'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧 天路篇'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '声生不息 华流季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发第三季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论第三季'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧·天路篇'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '声生不息·华流季'},
       { 'parent': '/天翼/nas/综艺' , 'name': '主咖和Ta的朋友们'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '你好星期六 2026'},
+      { 'parent': '/天翼/nas/综艺' , 'name': '你好星期六2026'},
     ]
 
     list = []
@@ -398,6 +398,32 @@ def spider():
     # 4. 默认错误响应
     return jsonify({"error": "bad request"})
 
+@app.route('/proxy')
+def proxy_image():
+    """最简单的图片代理，只下载返回"""
+    img_url = request.args.get('url')
+    
+    if not img_url:
+        return "请提供图片URL", 400
+    
+    try:
+        # 设置请求头避免403错误
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'referer': 'https://api.douban.com'
+        }
+        
+        # 下载图片
+        response = requests.get(img_url, headers=headers, timeout=10)
+        
+        # 直接返回
+        return Response(
+            response.content,
+            content_type=response.headers.get('Content-Type', 'image/jpeg')
+        )
+        
+    except Exception as e:
+        return f"错误: {str(e)}", 500
 
 if __name__ == "__main__":
   openlist_login()

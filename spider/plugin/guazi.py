@@ -257,6 +257,7 @@ class Spider(Spider):
                         "vod_pic": item.get('vod_pic', ''),
                         "vod_remarks": item.get('vod_scroe', '')
                     }
+                    print(video)
                     videos.append(video)
         except Exception as e:
             print(f"搜索失败: {e}")
@@ -489,6 +490,7 @@ if __name__ == '__main__':
     # formatJo = spider.homeContent(False)
     # formatJo = spider.categoryContent('2', 1, False, {})
     # formatJo = spider.detailContent(['123378'])
-    formatJo = spider.playerContent('', 'vod_d_id=123378&vurl_id=3038794&domain_type=8&resolution=1080&type=play||720@1080', False)
-
-    print(formatJo)
+    # formatJo = spider.playerContent('', 'vod_d_id=123378&vurl_id=3038794&domain_type=8&resolution=1080&type=play||720@1080', False)
+    formatJo = spider.searchContent('生命树', False)
+        
+    # print(formatJo)
