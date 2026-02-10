@@ -115,8 +115,8 @@ class Spider(Spider):  # 元类 默认的元类 type
           "vod_pic": f'http://101.42.13.92:5700/proxy?url={pic}',
           "vod_remarks": rating
         }
-        if index <= 10:
-            print(f"{index}\n{item}")
+        if index <= 5:
+            print(f"{index}==================\n{item}")
         videos.append(item)
 
     result['list'] = videos
@@ -153,7 +153,7 @@ if __name__ == '__main__':
     formatJo = spider.homeContent(False)
     formatJo = spider.categoryContent('rank_list_tv', 1, False)
     # formatJo = spider.categoryContent('rank_list_movie', 1, False)
-    # formatJo = spider.categoryContent('tv_hot', 1, False)
+    formatJo = spider.categoryContent('tv_hot', 1, False)
     formatJo = spider.categoryContent('show_hot', 1, False)
     # formatJo = spider.categoryContent('hot_gaia', 1, False)
 

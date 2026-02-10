@@ -41,7 +41,7 @@
       "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
+      "changeable": 0,
       "filterable": 1,
       "ext": {
         "sp": "TianTian",
@@ -53,21 +53,29 @@
       "key": "糯米",
       "name": "🍓糯米┃秒播",
       "type": 3,
-      "api": "./lib/nmys.py",
+      "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1
+      "changeable": 0,
+      "filterable": 1,
+      "ext": {
+        "sp": "Nmys"
+      },
+      "timeout": 10
     },
     {
-      "key": "py_小苹果",
+      "key": "小苹果",
       "name": "🍎苹果┃直连",
-      "type": 4,
-      "api": "https://py.doube.eu.org/v2/spider?site=9037cfae7c64405111e0e364401adb60",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
+      "changeable": 0,
       "filterable": 1,
-      "changeable": 1
+      "ext": {
+        "sp": "Xpg"
+      },
+      "timeout": 10
     },
     {
       "key": "非凡",
@@ -88,6 +96,13 @@
   "lives": [
     {
       "name": "iptv",
+      "type": 0,
+      "url": "./lib/iptv.m3u",
+      "playerType": 2,
+      "timeout": 10
+    },
+    {
+      "name": "iptv2",
       "type": 0,
       "url": "./lib/iptv2.m3u",
       "playerType": 2,

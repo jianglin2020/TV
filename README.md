@@ -16,3 +16,8 @@ certutil -hashfile filename SHA256
 http://ok321.top/ok 1450 
 http://www.饭太硬.com/tv
 ```
+
+```shell
+# 移动直播源
+https://raw.githubusercontent.com/mucuntakuya/jy/6f1b85cf2ce60cc5e61a08f186358f7f86b6b9d6/l.txt
+```

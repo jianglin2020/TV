@@ -112,7 +112,7 @@ def quark_link(name):
 
 
 if __name__ == '__main__':
-    list = ['剑来第二季']
+    list = ['成何体统', '唐宫奇案之青雾风鸣']
 
     for item in list:
         quark_link(item)

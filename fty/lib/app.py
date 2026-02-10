@@ -122,7 +122,7 @@ def quark_img(name):
 def home():
     # /spider?site=test&filter=true
     title_list = [
-      { 'parent': '/天翼/临时文件' , 'name': '剑来'},
+      { 'parent': '/天翼/临时文件' , 'name': '剑来第二季'},
       { 'parent': '/天翼/临时文件' , 'name': '中国奇谭第二季'},
       { 'parent': '/天翼/临时文件' , 'name': '轧戏'},
       { 'parent': '/天翼/临时文件' , 'name': '小城大事'},
@@ -337,7 +337,7 @@ def search(wd):
 
     list = []
     for item in data['content']:
-      if item['parent'] in {'/天翼/nas/综艺', '/天翼/nas/电视剧'}:
+      if item['parent'] in {'/天翼/nas/综艺', '/天翼/nas/电视剧', '/天翼/临时文件'}:
           list.append({
             "vod_id": f"{item['parent']}/{item['name']}",
             "vod_name": item['name'],
