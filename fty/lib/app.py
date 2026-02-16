@@ -61,15 +61,47 @@ def openlist_get(path):
     res = res.json()
     return res.get('data', {}) 
 
-def openlist_search(keywords):
-    res =  requests.post(f'{HOST_API}/api/fs/search', data=json.dumps({
-    "parent":"/","keywords": keywords,"scope":0,"page":1,"per_page":100,"password":""}), headers=HEADERS)
-    res = res.json()
+def openlist_search(keywords, max_retries=3):
+    for attempt in range(max_retries):
+      res =  requests.post(
+        f'{HOST_API}/api/fs/search',
+        data=json.dumps({
+        "parent":"/","keywords": keywords,"scope":0,"page":1,"per_page":100,"password":""}), headers=HEADERS
+      )
+      res_data = res.json()
+      
+      if res_data['code'] == 401:
+          if attempt < max_retries - 1:
+              print(f"授权失败，尝试重新登录 (第{attempt + 1}次重试)")
+              openlist_login()  # 重新登录
+              continue  # 重新尝试请求
+          else:
+              raise Exception(f"授权失败，已达最大重试次数{max_retries}")
+    
+    # 成功获取数据
+    return res_data.get('data', {})
 
-    return res.get('data', {})  
 
 def static_url(filename):
     return url_for('static', filename=filename, _external=True)
+
+def get_pic_list():
+    with open('./static/home/data.json', 'r', encoding='utf-8') as f:
+      data = json.load(f)
+      # 合并
+      merged = data['0'] + data['1']
+      return merged  
+
+def get_vod_pic(name, pic_list):
+    file_path = f"./static/images/{name}.jpg"
+    if os.path.exists(file_path):
+        return static_url(f"images/{name}.jpg")        # 读取现有数据
+    else:
+        item = next((x for x in pic_list if x['vod_name'] == name), None)
+
+        if item and item.get('vod_pic'):
+            print(name, item['vod_pic'])
+            return item['vod_pic']
 
 def extract_a_links(soup):
     """提取搜索结果的链接和标题"""
@@ -121,34 +153,37 @@ def quark_img(name):
 # 首页
 def home():
     # /spider?site=test&filter=true
-    title_list = [
-      { 'parent': '/天翼/临时文件' , 'name': '剑来第二季'},
-      { 'parent': '/天翼/临时文件' , 'name': '中国奇谭第二季'},
-      { 'parent': '/天翼/临时文件' , 'name': '轧戏'},
-      { 'parent': '/天翼/临时文件' , 'name': '小城大事'},
-      { 'parent': '/天翼/临时文件' , 'name': '御赐小仵作第二季'},
-      { 'parent': '/天翼/临时文件' , 'name': '太平年'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发第三季'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论第三季'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧·天路篇'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '声生不息·华流季'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '主咖和Ta的朋友们'},
-      { 'parent': '/天翼/nas/综艺' , 'name': '你好星期六2026'},
-    ]
+    title_list1 = list_page('/天翼/临时文件', 1)['list']
+    title_list2 = list_page('/天翼/nas/综艺', 1)['list'][:6]
+    list = title_list1 + title_list2
+    # title_list = [
+    #   { 'parent': '/天翼/临时文件' , 'name': '剑来第二季'},
+    #   { 'parent': '/天翼/临时文件' , 'name': '中国奇谭第二季'},
+    #   { 'parent': '/天翼/临时文件' , 'name': '轧戏'},
+    #   { 'parent': '/天翼/临时文件' , 'name': '小城大事'},
+    #   { 'parent': '/天翼/临时文件' , 'name': '御赐小仵作第二季'},
+    #   { 'parent': '/天翼/临时文件' , 'name': '太平年'},
+    #   { 'parent': '/天翼/nas/综艺' , 'name': '现在就出发第三季'},
+    #   { 'parent': '/天翼/nas/综艺' , 'name': '森林进化论第三季'},
+    #   { 'parent': '/天翼/nas/综艺' , 'name': '奔跑吧·天路篇'},
+    #   { 'parent': '/天翼/nas/综艺' , 'name': '声生不息·华流季'},
+    #   { 'parent': '/天翼/nas/综艺' , 'name': '主咖和Ta的朋友们'},
+    #   { 'parent': '/天翼/nas/综艺' , 'name': '你好星期六2026'},
+    # ]
 
-    list = []
+    # list = []
 
-    for item in title_list:
-      # 判断有没有海报，没有下载
-      file_path = f"./static/images/{item['name']}.jpg"
-      if not os.path.exists(file_path):
-          quark_img(item['name'])
-      list.append({
-          'vod_id': f"{item['parent']}/{item['name']}",
-          'vod_name': item['name'], 
-          'vod_pic': static_url(f"images/{item['name']}.jpg"),
-          'vod_remarks': ''
-      })
+    # for item in title_list:
+    #   # 判断有没有海报，没有下载
+    #   # file_path = f"./static/images/{item['name']}.jpg"
+    #   # if not os.path.exists(file_path):
+    #   #     quark_img(item['name'])
+    #   list.append({
+    #       'vod_id': f"{item['parent']}/{item['name']}",
+    #       'vod_name': item['name'], 
+    #       'vod_pic': static_url(f"images/{item['name']}.jpg"),
+    #       'vod_remarks': ''
+    #   })
       
     return {
       "class": [
@@ -202,6 +237,9 @@ def list_page(t, page):
           reverse=True
       )
 
+    # 获取静态数据
+    pic_list = get_pic_list()
+
     for item in sorted_items:
       # print(f"http://192.168.1.120:8010/images/{item['name']}.jpg")
       # 电影特殊处理
@@ -213,15 +251,15 @@ def list_page(t, page):
       list_item = {
         "vod_id": f"{t}/{name}",
         "vod_name": name,
-        'vod_pic': static_url(f"images/{name}.jpg"),
+        'vod_pic': get_vod_pic(name, pic_list),
         "vod_remarks": ""
       }
 
-      if not type in {'其它'}:
-        # 判断有没有海报，没有下载
-        file_path = f"./static/images/{name}.jpg"
-        if not os.path.exists(file_path):
-            quark_img(name) 
+      # if not type in {'其它'}:
+      #   # 判断有没有海报，没有下载
+      #   file_path = f"./static/images/{name}.jpg"
+      #   if not os.path.exists(file_path):
+      #       quark_img(name) 
 
       list.append(list_item)
       title_list.append(name)
@@ -331,9 +369,11 @@ def play_detail(play):
 
 # 搜索
 def search(wd):
-    data = openlist_search(wd)
-
+    data = openlist_search(wd) 
     print(data)
+
+    # 获取静态数据
+    pic_list = get_pic_list()
 
     list = []
     for item in data['content']:
@@ -341,7 +381,7 @@ def search(wd):
           list.append({
             "vod_id": f"{item['parent']}/{item['name']}",
             "vod_name": item['name'],
-             'vod_pic': static_url(f"images/{item['name']}.jpg"),
+            'vod_pic': get_vod_pic(item['name'], pic_list),
             "vod_remarks": ""
           })
       elif item['parent'] in {'/天翼/nas/电影'}:
@@ -349,7 +389,7 @@ def search(wd):
             list.append({
               "vod_id": f"{item['parent']}/{name}",
               "vod_name": name,
-              'vod_pic': static_url(f"images/{name}.jpg"),
+              'vod_pic': get_vod_pic(name, pic_list),
               "vod_remarks": ""
             })
 

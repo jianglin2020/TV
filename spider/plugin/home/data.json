@@ -10,11 +10,6 @@
       "vod_name": "中国奇谭第二季",
       "vod_remarks": "8.0"
     },
-    {
-      "vod_id": "120915",
-      "vod_name": "小城大事",
-      "vod_remarks": "7.0"
-    },
     { 
       "vod_id": "122909",
       "vod_name": "太平年",
@@ -43,6 +38,12 @@
     { 
       "vod_id": "89167",
       "vod_name": "成何体统",
+      "vod_remarks": "6.9"
+    },
+    { 
+      "vod_id": "124135",
+      "vod_name": "乡村爱情18",
+      "vod_pic": "https://images.67c6c7a.com/upload/vod/2026-02/202602011769932238.png",
       "vod_remarks": "6.9"
     },
     {
@@ -77,6 +78,12 @@
     }
   ],
   "1": [
+    { 
+      "vod_id": "124135",
+      "vod_name": "乡村爱情18",
+      "vod_pic": "https://images.67c6c7a.com/upload/vod/2026-02/202602011769932238.png",
+      "vod_remarks": "6.9"
+    },
     { 
       "vod_id": "89167",
       "vod_name": "成何体统",
