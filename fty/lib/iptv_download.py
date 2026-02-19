@@ -12,7 +12,7 @@ def download_m3u(url, save_path=None):
 
     headers = {
         'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36",
-        'Host': 'live.ottiptv.cc'
+        # 'Host': 'live.ottiptv.cc'
     }
 
     try:
@@ -27,7 +27,7 @@ def download_m3u(url, save_path=None):
             save_path = Path(save_path)
         
         # 写入文件
-        save_path.write_text(response.text, encoding='utf-8')
+        save_path.write_bytes(response.content)
         
         print(f"文件已成功下载到: {save_path.resolve()}")
         return True
@@ -38,7 +38,8 @@ def download_m3u(url, save_path=None):
 
 if __name__ == "__main__":
     # 需要下载的URL
-    m3u_url = "https://raw.githubusercontent.com/Mursor1985/LIVE/refs/heads/main/iptv.m3u"
+    #m3u_url = "https://raw.githubusercontent.com/Mursor1985/LIVE/refs/heads/main/iptv.m3u"
+    m3u_url = "https://raw.githubusercontent.com/Ruicosnow/live/refs/heads/main/sxyd18.m3u"
     
     # 自定义保存路径（可选）
     custom_path = r"./fty/lib/mursor.m3u"

@@ -11,24 +11,9 @@
       "vod_remarks": "8.0"
     },
     { 
-      "vod_id": "122909",
-      "vod_name": "太平年",
-      "vod_remarks": "7.3"
-    },
-    { 
       "vod_id": "123769",
       "vod_name": "生命树",
       "vod_remarks": "6.7"
-    },
-    { 
-      "vod_id": "123606",
-      "vod_name": "有罪之身",
-      "vod_remarks": "6.9"
-    },
-    { 
-      "vod_id": "124476",
-      "vod_name": "风过留痕",
-      "vod_remarks": "7.0"
     },
     { 
       "vod_id": "124811",
@@ -45,6 +30,18 @@
       "vod_name": "乡村爱情18",
       "vod_pic": "https://images.67c6c7a.com/upload/vod/2026-02/202602011769932238.png",
       "vod_remarks": "6.9"
+    },
+    { 
+      "vod_id": "30451",
+      "vod_name": "爆笑虫子 第一季",
+      "vod_pic": "https://images.67c6c7a.com/upload/vod/2019-10/201910061570347824.jpg",
+      "vod_remarks": "7.4"
+    },
+    { 
+      "vod_id": "30450",
+      "vod_name": "爆笑虫子 第二季",
+      "vod_pic": "https://images.67c6c7a.com/upload/vod/2019-10/201910061570348163.jpg",
+      "vod_remarks": "7.5"
     },
     {
       "vod_id": "108445",
@@ -78,12 +75,6 @@
     }
   ],
   "1": [
-    { 
-      "vod_id": "124135",
-      "vod_name": "乡村爱情18",
-      "vod_pic": "https://images.67c6c7a.com/upload/vod/2026-02/202602011769932238.png",
-      "vod_remarks": "6.9"
-    },
     { 
       "vod_id": "89167",
       "vod_name": "成何体统",

@@ -17,8 +17,8 @@
       "api": "http://101.42.13.92:5700/spider?site=test",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1
+      "changeable": 0,
+      "filterable": 1
     },
     {
       "key": "瓜子",
@@ -56,24 +56,10 @@
       "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
+      "changeable": 1,
       "filterable": 1,
       "ext": {
         "sp": "Nmys"
-      },
-      "timeout": 10
-    },
-    {
-      "key": "小苹果",
-      "name": "🍎苹果┃直连",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "Xpg"
       },
       "timeout": 10
     },
