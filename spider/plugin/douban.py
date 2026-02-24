@@ -153,7 +153,7 @@ if __name__ == '__main__':
     formatJo = spider.homeContent(False)
     formatJo = spider.categoryContent('rank_list_tv', 1, False)
     # formatJo = spider.categoryContent('rank_list_movie', 1, False)
-    formatJo = spider.categoryContent('tv_hot', 1, False)
+    # formatJo = spider.categoryContent('tv_hot', 1, False)
     formatJo = spider.categoryContent('show_hot', 1, False)
     # formatJo = spider.categoryContent('hot_gaia', 1, False)
 

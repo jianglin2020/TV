@@ -86,7 +86,7 @@ def quark_link(name):
         {'name': '至臻', 'url': 'https://xiaomi666.fun'},
         {'name': '蜡笔', 'url': 'https://feimao666.fun'},
         # {'name': '虎斑', 'url': 'http://103.45.162.207:20720'},
-        # {'name': '二小', 'url': 'http://www.2xiaopan.fun'}
+        {'name': '二小', 'url': 'http://www.2xiaopan.fun'}
     ]
 
     # 1. 抓取数据
@@ -112,7 +112,7 @@ def quark_link(name):
 
 
 if __name__ == '__main__':
-    list = ['乡村爱情18', '唐宫奇案之青雾风鸣']
+    list = ['好好的时光', '岁月有情时']
 
     for item in list:
         quark_link(item)

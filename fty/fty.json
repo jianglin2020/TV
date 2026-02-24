@@ -14,25 +14,21 @@
       "key": "py_test",
       "name": "🦋我的┃AList",
       "type": 4,
-      "api": "http://101.42.13.92:5700/spider?site=test",
+      "api": "http://192.168.1.120:5700/spider?site=openlist",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
+      "changeable": 1,
       "filterable": 1
     },
     {
       "key": "瓜子",
       "name": "🍉瓜子┃App",
       "type": 3,
-      "api": "csp_AweSomeGuard",
+      "api": "./lib/guazi.py",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "sp": "Guazi"
-      },
-      "timeout": 10
+      "filterable": 1
     },
     {
       "key": "热播",
@@ -41,7 +37,7 @@
       "api": "csp_AweSomeGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
+      "changeable": 1,
       "filterable": 1,
       "ext": {
         "sp": "TianTian",
@@ -70,7 +66,7 @@
       "api": "./lib/adBlock.py",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
+      "changeable": 0,
       "filterable": 1,
       "ext": {
         "url":"http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/",

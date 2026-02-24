@@ -217,8 +217,8 @@ class Spider(Spider):
 
 if __name__ == '__main__':
     spider = Spider()
-    # formatJo = spider.init('{"url":"http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/","a":[1,2,3,34]}') # 非凡初始化
-    formatJo = spider.init('{"url":"http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/","a":[1, 2, 3, 4, 5, 33, 34]}') # 电影天堂初始化
+    formatJo = spider.init('{"url":"http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/","a":[1,2,3,34]}') # 非凡初始化
+    # formatJo = spider.init('{"url":"http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/","a":[1, 2, 3, 4, 5, 33, 34]}') # 电影天堂初始化
     # formatJo = spider.homeContent(False)
     # formatJo = spider.categoryContent('34', 1, False, {})
     # formatJo = spider.detailContent(['2701'])

@@ -5,7 +5,7 @@
   "sites": [
     {
       "key": "豆瓣",
-      "name": "🤓公众号┃OK杰克 (打不开请长按首页或清空缓存)",
+      "name": "🤓公众号┃OK杰克 (关注不迷路)",
       "type": 3,
       "api": "csp_AweSomeGuard",
       "searchable": 0,
@@ -341,34 +341,6 @@
       "timeout": 10
     },
     {
-      "key": "小苹果",
-      "name": "🍎苹果┃直连",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "sp": "Xpg"
-      },
-      "timeout": 10
-    },
-    {
-      "key": "云云",
-      "name": "☁️云云┃App",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "YunYun"
-      },
-      "timeout": 10
-    },
-    {
       "key": "雄鹰",
       "name": "🦅雄鹰┃App",
       "type": 3,
@@ -379,34 +351,6 @@
       "filterable": 1,
       "ext": {
         "sp": "XiongYing"
-      },
-      "timeout": 10
-    },
-    {
-      "key": "鲸鱼",
-      "name": "🐳鲸鱼┃App",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "JingYu"
-      },
-      "timeout": 10
-    },
-    {
-      "key": "小猪",
-      "name": "🐖小猪┃App",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "XiaoZhu"
       },
       "timeout": 10
     },
@@ -425,20 +369,6 @@
       "timeout": 10
     },
     {
-      "key": "仓鼠",
-      "name": "🐹仓鼠┃App",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "CangShu"
-      },
-      "timeout": 10
-    },
-    {
       "key": "奇奇",
       "name": "🐵奇奇┃App",
       "type": 3,
@@ -453,8 +383,8 @@
       "timeout": 10
     },
     {
-      "key": "木瓜",
-      "name": "🥑木瓜┃App",
+      "key": "紫金",
+      "name": "🍇紫金┃App",
       "type": 3,
       "api": "csp_AweSomeGuard",
       "searchable": 1,
@@ -463,7 +393,21 @@
       "filterable": 1,
       "ext": {
         "sp": "AppFox",
-        "siteUrl": "http://www.yezitv.top"
+        "siteUrl": "https://www.zjcvod.com"
+      },
+      "timeout": 10
+    },
+    {
+      "key": "独播",
+      "name": "👠独播┃直连",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "filterable": 1,
+      "ext": {
+        "sp": "Duboku"
       },
       "timeout": 10
     },
@@ -675,20 +619,6 @@
       "timeout": 10
     },
     {
-      "key": "锦鲤短剧",
-      "name": "🐟锦鲤┃短剧",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "Jinli"
-      },
-      "timeout": 10
-    },
-    {
       "key": "盒马短剧",
       "name": "🦓盒马┃短剧",
       "type": 3,
@@ -717,6 +647,20 @@
       "timeout": 10
     },
     {
+      "key": "碎片短剧",
+      "name": "🧸碎片┃短剧",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "filterable": 1,
+      "ext": {
+        "sp": "SuiPian"
+      },
+      "timeout": 10
+    },
+    {
       "key": "甜圈短剧",
       "name": "🌸甜圈┃短剧",
       "type": 3,
@@ -729,20 +673,6 @@
         "sp": "TianQuan"
       },
       "timeout": 10
-    },
-    {
-      "key": "yhdm",
-      "name": "🌸樱花┃动漫",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "YHDM"
-      },
-      "timeout": 15
     },
     {
       "key": "动漫巴士",
@@ -770,20 +700,6 @@
         "sp": "Xb6v"
       },
       "timeout": 20
-    },
-    {
-      "key": "聚合直播",
-      "name": "📽️聚合┃直播",
-      "type": 3,
-      "api": "csp_AweSomeGuard",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "sp": "Living"
-      },
-      "timeout": 10
     },
     {
       "key": "快手直播",
@@ -867,11 +783,24 @@
       "timeout": 10
     },
     {
+      "key": "易听音乐",
+      "name": "🎧易听┃音乐",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "ext": {
+        "sp": "ShiJiMusic"
+      },
+      "timeout": 10
+    },
+    {
       "key": "酷狗音乐",
       "name": "🐕酷狗┃音乐",
       "type": 3,
       "api": "csp_AweSomeGuard",
-      "searchable": 0,
+      "searchable": 1,
       "quickSearch": 0,
       "changeable": 0,
       "ext": {
@@ -1124,6 +1053,19 @@
       "timeout": 25
     },
     {
+      "key": "影链",
+      "name": "🎞️影链┃搜索",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sp": "YingLian"
+      },
+      "timeout": 25
+    },
+    {
       "key": "音海",
       "name": "🎸音海┃搜索",
       "type": 3,
@@ -1198,6 +1140,19 @@
       "changeable": 0,
       "ext": {
         "sp": "Djps"
+      },
+      "timeout": 25
+    },
+    {
+      "key": "djso",
+      "name": "🔍剧搜┃搜索",
+      "type": 3,
+      "api": "csp_AweSomeGuard",
+      "searchable": 1,
+      "filterable": 1,
+      "changeable": 0,
+      "ext": {
+        "sp": "Djso"
       },
       "timeout": 25
     },
@@ -1331,26 +1286,18 @@
   ],
   "lives": [
     {
-      "name": "AI直播",
+      "name": "MIGU（登录版）",
       "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+      "url": "http://127.0.0.1:9978/proxy?do=migu&type=m3u8",
       "playerType": 2,
       "timeout": 10
     },
     {
-      "name": "MIGU",
+      "name": "MIGU（AI版本）",
       "type": 0,
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://ds65.tv1288.xyz",
       "playerType": 2,
       "timeout": 10
-    },
-    {
-      "name": "冰茶",
-      "type": 0,
-      "url": "http://127.0.0.1:9978/proxy?do=live&url=https%3A%2F%2Fbc.188766.xyz%2F%3Fip%3D%26mishitong%3Dtrue%26mima%3Dbingcha1130%26json%3Dtrue",
-      "playerType": 2,
-      "timeout": 10,
-      "ua": "bingcha/1.1 (mianfeifenxiang) "
     },
     {
       "name": "江苏移动",
@@ -1376,7 +1323,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/huyayqk.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.4.0.0"
+      "ua": "okHttp/Mod-1.5.0.0"
     },
     {
       "name": "肥羊B站直播",
@@ -1384,7 +1331,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/bililive.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.4.0.0"
+      "ua": "okHttp/Mod-1.5.0.0"
     },
     {
       "name": "肥羊斗鱼一起看",
@@ -1392,7 +1339,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/douyuyqk.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.4.0.0"
+      "ua": "okHttp/Mod-1.5.0.0"
     },
     {
       "name": "肥羊YY轮播",
@@ -1400,7 +1347,7 @@
       "url": "http://127.0.0.1:9978/proxy?do=live&url=https://sub.ottiptv.cc/yylunbo.m3u",
       "playerType": 2,
       "timeout": 10,
-      "ua": "okHttp/Mod-1.4.0.0"
+      "ua": "okHttp/Mod-1.5.0.0"
     }
   ],
   "ijk": [

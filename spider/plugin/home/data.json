@@ -5,48 +5,30 @@
       "vod_name": "剑来第二季",
       "vod_remarks": "7.9"
     },
-    {
-      "vod_id": "119024",
-      "vod_name": "中国奇谭第二季",
-      "vod_remarks": "8.0"
-    },
     { 
       "vod_id": "123769",
       "vod_name": "生命树",
       "vod_remarks": "6.7"
     },
     { 
-      "vod_id": "124811",
-      "vod_name": "唐宫奇案之青雾风鸣",
-      "vod_remarks": "7.9"
-    },
-    { 
-      "vod_id": "89167",
-      "vod_name": "成何体统",
-      "vod_remarks": "6.9"
-    },
-    { 
       "vod_id": "124135",
       "vod_name": "乡村爱情18",
-      "vod_pic": "https://images.67c6c7a.com/upload/vod/2026-02/202602011769932238.png",
       "vod_remarks": "6.9"
     },
     { 
-      "vod_id": "30451",
-      "vod_name": "爆笑虫子 第一季",
-      "vod_pic": "https://images.67c6c7a.com/upload/vod/2019-10/201910061570347824.jpg",
-      "vod_remarks": "7.4"
+      "vod_id": "126551",
+      "vod_name": "岁月有情时",
+      "vod_remarks": "7.3"
     },
     { 
-      "vod_id": "30450",
-      "vod_name": "爆笑虫子 第二季",
-      "vod_pic": "https://images.67c6c7a.com/upload/vod/2019-10/201910061570348163.jpg",
-      "vod_remarks": "7.5"
+      "vod_id": "126720",
+      "vod_name": "纯真年代的爱情",
+      "vod_remarks": "7.8"
     },
-    {
-      "vod_id": "108445",
-      "vod_name": "现在就出发第三季",
-      "vod_remarks": "7.6"
+    { 
+      "vod_id": "126987",
+      "vod_name": "好好的时光",
+      "vod_remarks": "6.7"
     },
     {
       "vod_id": "93494",
@@ -69,12 +51,37 @@
       "vod_remarks": "7.7"
     },
     {
+      "vod_id": "68036",
+      "vod_name": "大侦探第十一季",
+      "vod_remarks": "7.0"
+    }, 
+    {
       "vod_id": "141",
       "vod_name": "你好星期六2026",
       "vod_remarks": "6.1"
     }
   ],
   "1": [
+    { 
+      "vod_id": "126987",
+      "vod_name": "好好的时光",
+      "vod_remarks": "6.7"
+    },
+    { 
+      "vod_id": "126720",
+      "vod_name": "纯真年代的爱情",
+      "vod_remarks": "7.8"
+    },
+    { 
+      "vod_id": "126551",
+      "vod_name": "岁月有情时",
+      "vod_remarks": "7.3"
+    },
+    { 
+      "vod_id": "124135",
+      "vod_name": "乡村爱情18",
+      "vod_remarks": "6.9"
+    },
     { 
       "vod_id": "89167",
       "vod_name": "成何体统",
@@ -612,6 +619,11 @@
     }
   ],
   "2": [
+    {
+      "vod_id": "68036",
+      "vod_name": "大侦探第十一季",
+      "vod_remarks": "7.0"
+    }, 
     {
       "vod_id": "122999",
       "vod_name": "主咖和Ta的朋友们",

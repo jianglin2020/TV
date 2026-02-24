@@ -247,13 +247,23 @@ class Spider(Spider):
             print(f"搜索请求耗时: {end_time - start_time:.2f}秒")
             
             if data and 'list' in data:
+                # 定义映射关系
+                rename_map = {
+                    '乡村爱情第18季': '乡村爱情18',
+                    '大侦探第十一季十年侦心新春演唱会': '大侦探第十一季'
+                }
                 for item in data['list'][:3]:
                     vod_continu = item.get('vod_continu', 0)
                     # remarks = '电影' if vod_continu == 0 else f'更新至{vod_continu}集'
-                    
+                    # 配置跳过的type
+                    skip_type = {'1', '64'}
+                    if item.get('d_type', '') in skip_type:
+                        continue
+                    # 名称
+                    vod_name = item.get('vod_name', '')
                     video = {
                         "vod_id": f"{item.get('vod_id', '')}",
-                        "vod_name": item.get('vod_name', ''),
+                        "vod_name": rename_map.get(vod_name, vod_name), # 特殊值替换
                         "vod_pic": item.get('vod_pic', ''),
                         "vod_remarks": item.get('vod_scroe', '')
                     }
@@ -491,6 +501,6 @@ if __name__ == '__main__':
     # formatJo = spider.categoryContent('2', 1, False, {})
     # formatJo = spider.detailContent(['123378'])
     # formatJo = spider.playerContent('', 'vod_d_id=123378&vurl_id=3038794&domain_type=8&resolution=1080&type=play||720@1080', False)
-    formatJo = spider.searchContent('爆笑虫子', False)
+    formatJo = spider.searchContent('好好的时光', False)
         
     # print(formatJo)
