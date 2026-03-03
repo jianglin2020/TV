@@ -255,9 +255,9 @@ class Spider(Spider):
                 for item in data['list'][:3]:
                     vod_continu = item.get('vod_continu', 0)
                     # remarks = '电影' if vod_continu == 0 else f'更新至{vod_continu}集'
-                    # 配置跳过的type
-                    skip_type = {'1', '64'}
-                    if item.get('d_type', '') in skip_type:
+                    # 配置跳过的ids
+                    skip_ids = {'87675', '1414', '64737', '108219'}
+                    if item.get('vod_id', '') in skip_ids:
                         continue
                     # 名称
                     vod_name = item.get('vod_name', '')
@@ -501,6 +501,6 @@ if __name__ == '__main__':
     # formatJo = spider.categoryContent('2', 1, False, {})
     # formatJo = spider.detailContent(['123378'])
     # formatJo = spider.playerContent('', 'vod_d_id=123378&vurl_id=3038794&domain_type=8&resolution=1080&type=play||720@1080', False)
-    formatJo = spider.searchContent('好好的时光', False)
+    formatJo = spider.searchContent('老有所依', False)
         
     # print(formatJo)

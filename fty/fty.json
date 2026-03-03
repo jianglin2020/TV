@@ -1,5 +1,4 @@
 {
-  "spider": "./lib/ok.jpg;md5;127ea82cb8bf8a82f0cf64da66e39b60",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "sites": [
     {
@@ -34,30 +33,21 @@
       "key": "热播",
       "name": "📺热播┃App",
       "type": 3,
-      "api": "csp_AweSomeGuard",
+      "api": "./lib/rebo.py",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "sp": "TianTian",
-        "site": 0
-      },
-      "timeout": 10
+      "filterable": 1
     },
     {
-      "key": "糯米",
-      "name": "🍓糯米┃秒播",
+      "key": "独播库",
+      "name": "🍓独播┃App",
       "type": 3,
-      "api": "csp_AweSomeGuard",
+      "api": "./lib/duboku.py",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
-      "filterable": 1,
-      "ext": {
-        "sp": "Nmys"
-      },
-      "timeout": 10
+      "filterable": 1
     },
     {
       "key": "非凡",
