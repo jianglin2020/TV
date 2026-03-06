@@ -70,7 +70,7 @@ with open(file_to_update, "r", encoding="utf-8") as file:
                 valid_addresses = []
                 for address in channel_address_map[normalized_name]:  # 遍历所有新地址
                     # 定义需要过滤的关键词
-                    filter_keywords = ['/mg/', '/mst/', '2409:8087:c00:21::2:46', '2409:8087:c00:21::2:37', '3221225991']
+                    filter_keywords = ['/mg/', '/mst/', '2409:8087:c00:21::2:46', '2409:8087:c00:21::2:37', '3221225991', '3221225909']
                     # 如果地址包含任意一个过滤词，则跳过
                     if any(keyword in address for keyword in filter_keywords):
                         continue

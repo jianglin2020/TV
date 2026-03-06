@@ -21,6 +21,16 @@
       "changeable": 0
     },
     {
+      "key": "py_Jable",
+      "name": "Jable(T4)",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=jable",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0
+    },
+    {
       "key": "py_maomt",
       "name": "Maomt(T4)",
       "type": 4,
