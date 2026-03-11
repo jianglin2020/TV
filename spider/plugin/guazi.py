@@ -267,7 +267,8 @@ class Spider(Spider):
                         "vod_pic": item.get('vod_pic', ''),
                         "vod_remarks": item.get('vod_scroe', '')
                     }
-                    print(video)
+                    json_output = json.dumps(video, ensure_ascii=False, indent=2)
+                    print(f'{json_output},')
                     videos.append(video)
         except Exception as e:
             print(f"搜索失败: {e}")

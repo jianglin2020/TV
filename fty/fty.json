@@ -13,7 +13,7 @@
       "key": "py_test",
       "name": "🦋我的┃AList",
       "type": 4,
-      "api": "http://192.168.1.120:5700/spider?site=openlist",
+      "api": "http://101.42.13.92:5700/spider?site=test",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,

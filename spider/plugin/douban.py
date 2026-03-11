@@ -113,7 +113,7 @@ class Spider(Spider):  # 元类 默认的元类 type
           "vod_id": f'msearch:{vod.get("type", "")}__{vod.get("id", "")}',
           "vod_name": vod['title'],
           "vod_pic": f'http://101.42.13.92:5700/proxy?url={pic}',
-          "vod_remarks": rating
+          "vod_remarks": str(rating)
         }
         if index <= 5:
             print(f"{index}==================\n{item}")
