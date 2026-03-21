@@ -377,7 +377,7 @@ def search(wd):
 
     list = []
     for item in data['content']:
-      if item['parent'] in {'/天翼/nas/综艺', '/天翼/nas/电视剧', '/天翼/临时文件'}:
+      if item['parent'] in {'/天翼/nas/综艺', '/天翼/nas/电视剧', '/天翼/家庭/电视剧', '/天翼/临时文件'}:
           list.append({
             "vod_id": f"{item['parent']}/{item['name']}",
             "vod_name": item['name'],

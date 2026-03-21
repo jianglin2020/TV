@@ -502,6 +502,6 @@ if __name__ == '__main__':
     # formatJo = spider.categoryContent('2', 1, False, {})
     # formatJo = spider.detailContent(['123378'])
     # formatJo = spider.playerContent('', 'vod_d_id=123378&vurl_id=3038794&domain_type=8&resolution=1080&type=play||720@1080', False)
-    formatJo = spider.searchContent('逐玉', False)
+    formatJo = spider.searchContent('隐身的名字', False)
         
     # print(formatJo)
