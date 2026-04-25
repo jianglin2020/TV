@@ -20,6 +20,26 @@
       "filterable": 1
     },
     {
+      "key": "openlist",
+      "name": "👽本地┃App",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=openlist",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1
+    },
+    {
+      "key": "zconnect",
+      "name": "💌空间┃App",
+      "type": 4,
+      "api": "http://192.168.1.120:5700/spider?site=zconnect",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1
+    },
+    {
       "key": "瓜子",
       "name": "🍉瓜子┃App",
       "type": 3,
@@ -48,20 +68,6 @@
       "quickSearch": 1,
       "changeable": 1,
       "filterable": 1
-    },
-    {
-      "key": "非凡",
-      "name": "⛅️非凡┃无广",
-      "type": 3,
-      "api": "./lib/adBlock.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "url":"http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/",
-        "a":[1, 2, 3, 34]
-      }
     }
   ],
   "logo": "./lib/logo.gif",

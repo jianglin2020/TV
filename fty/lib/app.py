@@ -323,10 +323,11 @@ def detail(ids):
 
     for all_item in all_content:
         ids = all_item['ids']
-        # 使用列表推导式优化内部循环
+        # 只保留 .mp4 或 .mkv 文件
         play_list = [
-            f"{it['name']}${ids}/{it['name']}" 
+            f"{it['name']}${ids}/{it['name']}"
             for it in all_item['content']
+            if it['name'].lower().endswith(('.mp4', '.mkv'))
         ]
         all_play_list.append('#'.join(play_list))
         all_from_list.append(all_item['play_from'])
@@ -377,12 +378,14 @@ def search(wd):
 
     list = []
     for item in data['content']:
+      remarks = item['parent'].split('/')[1]
       if item['parent'] in {'/天翼/nas/综艺', '/天翼/nas/电视剧', '/天翼/家庭/电视剧', '/天翼/临时文件'}:
+          remarks = item['parent'].split('/')[1]
           list.append({
             "vod_id": f"{item['parent']}/{item['name']}",
             "vod_name": item['name'],
             'vod_pic': get_vod_pic(item['name'], pic_list),
-            "vod_remarks": ""
+            "vod_remarks": remarks
           })
       elif item['parent'] in {'/天翼/nas/电影'}:
             name = item['name'].split('.')[-2]
@@ -390,7 +393,7 @@ def search(wd):
               "vod_id": f"{item['parent']}/{name}",
               "vod_name": name,
               'vod_pic': get_vod_pic(name, pic_list),
-              "vod_remarks": ""
+              "vod_remarks": remarks
             })
 
     return {
