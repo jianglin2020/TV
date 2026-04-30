@@ -319,7 +319,7 @@ class Spider(Spider):
                         "playUrl": "",
                         "url": data['url'],
                         "header": {
-                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0'
+                            'User-Agent': 'com.android.chrome/131.0.6778.200 (Linux;Android 15) AndroidXMedia3/1.6.1'
                         }
                     }
             
@@ -505,6 +505,6 @@ if __name__ == '__main__':
     # formatJo = spider.categoryContent('2', 1, False, {})
     # formatJo = spider.detailContent(['82307'])
     # formatJo = spider.playerContent('', 'vod_d_id=82307&vurl_id=1403769&domain_type=8&resolution=1080&type=play||720@108', False)
-    formatJo = spider.searchContent('乡村爱情3', False)
+    formatJo = spider.searchContent('飞驰人生3', False)
         
     # print(formatJo)

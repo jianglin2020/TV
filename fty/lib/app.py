@@ -153,7 +153,7 @@ def quark_img(name):
 # 首页
 def home():
     # /spider?site=test&filter=true
-    title_list1 = list_page('/天翼/临时文件', 1)['list']
+    title_list1 = list_page('天翼/nas/电视剧', 1)['list'][:6]
     title_list2 = list_page('/天翼/nas/综艺', 1)['list'][:6]
     list = title_list1 + title_list2
     # title_list = [
